@@ -1,0 +1,34 @@
+@font-face { font-family: "Gotham-Medium"; src: url("../fonts/Gotham-Medium.eot"); src: url("../fonts/Gotham-Medium.eot") format("embedded-opentype"), url("../fonts/Gotham-Medium.woff") format("woff"); }
+
+@font-face { font-family: "Gotham-XLightItalic"; src: url("../fonts/Gotham-XLightItalic.eot"); src: url("../fonts/Gotham-XLightItalic.eot") format("embedded-opentype"), url("../fonts/Gotham-XLightItalic.woff") format("woff"); }
+
+@font-face { font-family: "Gotham-Book"; src: url("../fonts/Gotham-Book.eot"); src: url("../fonts/Gotham-Book.eot") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"); }
+
+* { margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body { font-family: "Gotham-Medium", Arial, Tahoma, sans-serif; font-weight: normal; font-size: 14px; line-height: 1.4; }
+
+a img, fieldset { border: none; }
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+textarea, button, select, input { border: none; outline: none; font-family: "Gotham-Medium", Arial, Tahoma, sans-serif; }
+
+button { background: none; line-height: 1; cursor: pointer; }
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+
+.footer { height: 100px; }
+
+.wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -100px; }
+
+.wrap__in { width: 1175px; margin: 0 auto; }
+
+.push { height: 100px; clear: both; }
+
+.header { border-radius: 10px; }
