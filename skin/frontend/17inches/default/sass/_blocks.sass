@@ -1,0 +1,76 @@
+@import "base"
+.breadcrumbs
+	margin: 15px 0 20px 
+	font-size: 0
+	a,span
+		position: relative
+		display: inline-block
+		margin-left: 72px
+		+fboo
+		font-size: 14px
+		text-transform: uppercase
+		&:before
+			content: ""
+			position: absolute
+			left: -32px
+			top: 2px
+			+s(arr1)
+		&:first-child
+			margin-left: 0
+			&:before
+				display: none
+
+.title
+	position: relative
+	margin: 78px 0 57px
+	font-size: 24px
+	font-weight: normal 
+	text-align: center
+	text-transform: uppercase
+	&:after
+		content: ""
+		position: absolute
+		left: 50%
+		bottom: -16px
+		margin-left: -41px
+		+s(title) 
+
+.soc
+	position: relative
+	margin: 84px 0 105px 
+	height: 70px
+	line-height: 70px
+	font-size: 0
+	text-align: center
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		left: 50%
+		margin-left: -70px
+		width: 140px
+		height: 1px
+		background: #160b19  
+	&:before
+		top: 0
+	&:after
+		bottom: 0
+.soc__link
+	display: inline-block
+	margin-left: 55px
+	vertical-align: middle
+	&:first-child
+		margin-left: 0
+	&:active
+		position: relative
+		top: 1px
+.soc__in
+	+s(soc-in) 
+.soc__fb
+	+s(soc-fb)
+.soc__tw
+	+s(soc-tw)
+.soc__pi
+	+s(soc-pi)
+.soc__em
+	+s(soc-em)
