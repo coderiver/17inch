@@ -13,6 +13,8 @@ output, ruby, section, summary,time, mark, audio, video
 	vertical-align: baseline
 body, html
 	height: 100%    
+body
+	min-width: 1080px
 img,fieldset 
 	border: none
 input[type="submit"]
@@ -95,6 +97,7 @@ $hf: 525px
 	margin-left: -130px
 	text-align: center
 	font-size: 0
+	text-transform: none
 .logo__title
 	display: inline-block
 	margin-bottom: 3px
@@ -151,6 +154,7 @@ $hf: 525px
 		font-size: 11px
 		color: #FFF
 		+tr(background .2s linear)
+		text-transform: none
 		&:hover
 			background: $gr
 			color: #333
@@ -169,6 +173,7 @@ $hf: 525px
 	+fl
 	color: #FFF
 	line-height: 1
+	text-transform: none
 	a
 		color: #FFF
 		border-bottom: 1px solid #7d7d7d 
@@ -215,12 +220,12 @@ $hf: 525px
 	display: none
 	position: absolute
 	top: 100%
-	left: 0
-	width: 610px
-	padding: 55px 90px 90px 55px 
-	text-align: left
+	left: 0 
+	text-align: left	
 .nav__sub-in
 	position: relative
+	padding: 55px 90px 90px 55px	
+	white-space: nowrap
 	z-index: 10 
 .nav__sub-list-bg
 	position: absolute
@@ -235,14 +240,14 @@ $hf: 525px
 	width: 175px
 	margin-right: 65px
 	vertical-align: top
+	white-space: normal
 	ul
 		margin-bottom: 30px
 	li
 		margin-bottom: 5px
 	a
 		font-size: 12px
-		color: #595957 
-		
+		color: #595957 		
 .nav__sub-title
 	margin-bottom: 25px
 	font-size: 25px
@@ -259,7 +264,10 @@ $hf: 525px
 	background: $gr
 .nav__sub-arr
 	bottom: 0  
-	+arr(755, 120, $gr, tl)
+	height: 120px
+	background-image: url(../img/arr-green.png) 
+	background-repeat: no-repeat
+	background-size: 100% 100%
 .nav__sub-el
 	display: inline-block
 	vertical-align: top
@@ -269,6 +277,7 @@ $hf: 525px
 	margin-left: 20px 
 	vertical-align: top
 	text-align: center
+	white-space: normal
 	&:first-child
 		margin: 0
 	a

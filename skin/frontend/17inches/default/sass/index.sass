@@ -1,1 +1,45 @@
 @import "base"
+.main
+	padding-bottom: 65px
+	background: #f5f5f5 
+	overflow: hidden
+.m-slider	
+	position: relative
+	text-align: center
+.m-slider__el
+	height: 655px
+	+cover
+	line-height: 540px
+.m-slider__middle
+	display: inline-block
+	vertical-align: middle
+	color: #fff
+.m-slider__title 
+	max-width: 800px
+	border-bottom: 2px solid #F3FAEC
+	font-size: 82px
+	line-height: 1.1
+.m-slider__title-sub
+	padding-top: 10px
+	font-size: 24px
+	line-height: 1.2
+.m-slider__arr
+	position: absolute
+	bottom: 0
+	left: 50%
+	width: 1920px
+	height: 300px
+	margin-left: -960px
+	background: url(../img/arr-white.png) no-repeat 0 0
+	z-index: 500
+.m-slider__prev, .m-slider__next
+	position: absolute
+	top: 180px
+.m-slider__next
+	right: 50%
+	margin-right: -540px
+	+s(m-slider-next)
+.m-slider__prev
+	left: 50%
+	margin-left: -540px
+	+s(m-slider-prev)
