@@ -12,7 +12,9 @@ output, ruby, section, summary,time, mark, audio, video
 	border: 0
 	vertical-align: baseline
 body, html
-	height: 100%    
+	height: 100%
+body
+	min-width: 1080px
 img,fieldset 
 	border: none
 input[type="submit"]
@@ -217,8 +219,10 @@ $hf: 525px
 	width: 610px
 	padding: 55px 90px 90px 55px 
 	text-align: left
+	white-space: nowrap
 .nav__sub-in
 	position: relative
+	white-space: normal
 	z-index: 10 
 .nav__sub-list-bg
 	position: absolute
@@ -257,7 +261,10 @@ $hf: 525px
 	background: $gr
 .nav__sub-arr
 	bottom: 0  
-	+arr(755, 120, $gr, tl)
+	height: 120px
+	background-image: url(../img/arr-green.png) 
+	background-repeat: no-repeat
+	background-size: 100% 100%
 .nav__sub-el
 	display: inline-block
 	vertical-align: top

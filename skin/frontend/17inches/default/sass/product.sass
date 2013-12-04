@@ -1,34 +1,40 @@
-@import "base"
+@import base
+
 .slider-wrap
-	position: relative
+    position: relative
+
 .slider__item
-	margin-right: 7px
-	width: 210px
-	img
-		display: block
-		margin: 0 auto
-		max-width: 100%
-		height: auto 
+    margin-right: 7px
+    width: 210px
+    img
+        display: block
+        margin: 0 auto
+        max-width: 100%
+        height: auto
+
 .slider__info
-	padding-top: 13px
-	text-align: center
-	+fboo
-	text-transform: uppercase
-	strong
-		display: block
-		margin-bottom: 3px
-		font-weight: normal
-		+f
-	span
-		display: block
-		margin-bottom: 11px
-	color: $brown 
+    padding-top: 13px
+    text-align: center
+    +fboo
+    text-transform: uppercase
+    strong
+        display: block
+        margin-bottom: 3px
+        font-weight: normal
+        +f
+    span
+        display: block
+        margin-bottom: 11px
+    color: $brown
+
 .slider-nav
-	position: absolute
-	top: 130px
+    position: absolute
+    top: 130px
+
 .slider-nav_prev
-	left: -130px
-	+s(slider-prev)
+    left: -130px
+    +s(slider-prev)
+
 .slider-nav_next
-	right: -130px
-	+s(slider-next)
+    right: -130px
+    +s(slider-next)
