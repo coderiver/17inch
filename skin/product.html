@@ -4,11 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Product</title>
-	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/main.css" >
-	<script src="frontend/17inches/default/js/jquery.js"></script>
-	<script src="frontend/17inches/default/js/jquery.cycle2.js"></script>
-	<script src="frontend/17inches/default/js/jquery.cycle2.carousel.js"></script>
-	<script src="frontend/17inches/default/js/html5shiv.js"></script>
+	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/common.css" >
+	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/product.css" >
+	<script src="../js/prototype/prototype.js"></script>
+	<script src="../js/scriptaculous/scriptaculous.js"></script>
+	<script src="../js/carousel.js"></script>
 	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
 <body>
@@ -96,102 +96,9 @@
 			<a href="#">Lorem ipsum</a>
 			<span>Lorem ipsum</span>
 		</nav>
-		<div class="slider-gallery js-slider-gallery">
-            <div class="js-slider-cycle slider-gallery__top js-cycle-1"
-                data-cycle-slides="> div"
-                data-cycle-timeout="0"
-                data-cycle-fx="fade"
-                data-cycle-speed="200"
-                >
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/625/782/">
-                </div>
-            </div>
-            <div class="js-slider-cycle slider-gallery__bottom js-cycle-2"
-                data-cycle-slides="> div"
-                data-cycle-timeout="0"
-                data-cycle-speed="200"
-                data-cycle-fx="carousel"
-                data-cycle-carousel-visible="11"
-                data-cycle-slide-active-class="is-active"
-                data-allow-wrap="false"
-                >
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-                <div class="slider-gallery__item">
-                    <img src="http://lorempixel.com/210/322/" width="35" height="35">
-                </div>
-            </div>
-            <button class="btn-prev js-cycle-prev"></button>
-            <button class="btn-next js-cycle-next"></button>
-        </div>
 		<h2 class="title">Auch Verfügbar als</h2>
-		<div class="slider-wrap">
-			<div class="slider js-cycle"
-		        data-cycle-fx="carousel"
-		        data-cycle-timeout="0"
-		        data-cycle-slides=".slider__item"
-		        data-cycle-carousel-visible=5
-		        data-cycle-carousel-hops="5"
-		    >
+		<div class="slider-wrap js-prototype-slider">
+			<div class="slider">
 		    	<div class="slider__item">
 		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
 		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
@@ -233,62 +140,11 @@
 		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
 		    	</div>
 		    </div>
-		    <button class="slider-nav slider-nav_prev js-cycle-prev"></button>
-		    <button class="slider-nav slider-nav_next js-cycle-next"></button>
+		    <a href="javascript:" class="slider-nav slider-nav_prev" rel="prev">›</a>
+		    <a href="javascript:" class="slider-nav slider-nav_next" rel="next">›</a>
 		</div>
 		<h2 class="title">Zuletzt angesehen</h2>
-		<div class="slider-wrap">
-			<div class="slider js-cycle"
-		        data-cycle-fx="carousel"
-		        data-cycle-timeout="0"
-		        data-cycle-slides=".slider__item"
-		        data-cycle-carousel-visible=5
-		        data-cycle-carousel-hops="5"
-		    >
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    	<div class="slider__item">
-		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-		    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-		    	</div>
-		    </div>
-		    <button class="slider-nav slider-nav_prev js-cycle-prev"></button>
-		    <button class="slider-nav slider-nav_next js-cycle-next"></button>
-		</div>
+	
 		<div class="soc">
 			<a href="#" class="soc__link soc__in"></a>
 			<a href="#" class="soc__link soc__fb"></a>
