@@ -444,23 +444,71 @@ $hf: 525px
 		bottom: 0
 .soc__link
 	display: inline-block
-	margin-left: 55px
+	height: 68px 
+	width: 68px
+	line-height: 68px
+	text-align: center
 	vertical-align: middle
+	+transition(background .1s linear)
 	&:first-child
 		margin-left: 0
+	&:hover
+		position: relative
+		z-index: 2
 	&:active
 		position: relative
 		top: 1px
+	i
+		display: inline-block
+		vertical-align: middle
 .soc__in
-	+s(soc-in) 
+	&:hover
+		background: #408bb2
+		box-shadow: 0 0 0 1px #408bb2
+		i
+			+s(soc-in-white)
+	i
+		+s(soc-in) 
+.soc__th
+	&:hover
+		background: #8d9292
+		box-shadow: 0 0 0 1px #8d9292
+		i
+			+s(soc-th-white)
+	i
+		+s(soc-th) 
 .soc__fb
-	+s(soc-fb)
+	&:hover
+		background: #1d5a93
+		box-shadow: 0 0 0 1px #1d5a93
+		i
+			+s(soc-fb-white)
+	i
+		+s(soc-fb)
 .soc__tw
-	+s(soc-tw)
+	&:hover
+		background: #b0e3e9
+		box-shadow: 0 0 0 1px #b0e3e9
+		i
+			+s(soc-tw-white)
+	i
+		+s(soc-tw)
 .soc__pi
-	+s(soc-pi)
+	&:hover
+		background: #e90e0e
+		box-shadow: 0 0 0 1px #e90e0e
+		i
+			+s(soc-pi-white)
+	i
+		+s(soc-pi) 
 .soc__em
-	+s(soc-em)
+	&:hover
+		background: #dae2cf
+		box-shadow: 0 0 0 1px #dae2cf
+		i
+			+s(soc-em-white)
+	i
+		+s(soc-em)
 
 .field
 	margin-bottom: 7px
