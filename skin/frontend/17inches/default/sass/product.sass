@@ -353,6 +353,19 @@
 			position: absolute
 			right: 11px
 			top: 9px
+
+.item__info-text
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+	font-size: 14px
+	+fboo
+	strong
+		font-weight: normal
+		+f
+	+ .item__to-basket
+		float: right
+		margin-right: 14px
 .select_s
 	border-width: 1px 
 	&:after
@@ -368,10 +381,14 @@
 	line-height: 42px
 	text-align: center
 	border: 4px solid #b7c0a9
+	+transition(background .2s linear)
 	i
 		display: inline-block
 		vertical-align: middle
 		+s(h-cart-h)
+	&:hover
+		background: #f1cda4
+		border-color: #e9af6e 
 .item__link
 	text-align: center
 	font-size: 10px

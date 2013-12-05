@@ -122,13 +122,18 @@
 .item__actions .input-plus { position: relative; }
 .item__actions .input-plus .btn-add { position: absolute; right: 11px; top: 9px; }
 
+.item__info-text { display: inline-block; vertical-align: middle; margin-right: 10px; font-size: 14px; font-family: "Gotham-Book", Arial, Tahoma, sans-serif; }
+.item__info-text strong { font-weight: normal; font-family: "Gotham-Medium", Arial, Tahoma, sans-serif; }
+.item__info-text + .item__to-basket { float: right; margin-right: 14px; }
+
 .select_s { border-width: 1px; }
 .select_s:after { background: url('../img/icons-s28585e5ee0.png') 0 -1518px no-repeat; width: 10px; height: 6px; }
 
 .input_s { border-width: 1px; background: transparent; }
 
-.item__to-basket { display: inline-block; vertical-align: middle; width: 42px; height: 42px; line-height: 42px; text-align: center; border: 4px solid #b7c0a9; }
+.item__to-basket { display: inline-block; vertical-align: middle; width: 42px; height: 42px; line-height: 42px; text-align: center; border: 4px solid #b7c0a9; -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; transition: background 0.2s linear; }
 .item__to-basket i { display: inline-block; vertical-align: middle; background: url('../img/icons-s28585e5ee0.png') 0 -945px no-repeat; width: 16px; height: 15px; }
+.item__to-basket:hover { background: #f1cda4; border-color: #e9af6e; }
 
 .item__link { text-align: center; font-size: 10px; }
 .item__link a { text-decoration: underline; }
