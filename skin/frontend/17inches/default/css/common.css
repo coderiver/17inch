@@ -206,3 +206,11 @@ button::-moz-focus-inner { padding: 0; border: 0; }
 .input_digit { display: inline-block; width: 60px; text-align: right; vertical-align: middle; }
 
 .btn-add { display: inline-block; margin-left: 6px; vertical-align: middle; background: url('../img/icons-sbff4c5b0ab.png') 0 -200px no-repeat; width: 11px; height: 11px; }
+
+.item { float: left; margin-right: 27px; width: 250px; font-size: 14px; }
+.item:hover { background: #dfe6d4; box-shadow: 0 0 0 7px #dfe6d4, 0 0 4px black; }
+.item img { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+
+.item__info { padding-top: 13px; text-align: center; font-family: "Gotham-Book", Arial, Tahoma, sans-serif; color: #605b5b; }
+.item__info strong { display: block; margin-bottom: 3px; font-weight: normal; font-family: "Gotham-Medium", Arial, Tahoma, sans-serif; }
+.item__info span { display: block; margin-bottom: 11px; }

@@ -89,3 +89,7 @@
 .tab-cont ul:after { clear: both; }
 .tab-cont li { position: relative; float: left; margin-bottom: 3px; padding-left: 22px; width: 50%; -moz-box-sizing: border-box; box-sizing: border-box; }
 .tab-cont li:after { content: ""; position: absolute; left: 4px; top: 2px; background: url('../img/icons-sbff4c5b0ab.png') 0 -1366px no-repeat; width: 8px; height: 8px; }
+
+.item-wrap { margin-right: -30px; font-size: 0; }
+
+.item { display: inline-block; width: 250px; margin-right: 27px; vertical-align: top; }
