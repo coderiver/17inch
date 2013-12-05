@@ -21,9 +21,9 @@
 
 .m-slider__prev, .m-slider__next { position: absolute; top: 180px; }
 
-.m-slider__next { right: 50%; margin-right: -540px; background: url('../img/icons-sbff4c5b0ab.png') 0 -1070px no-repeat; width: 80px; height: 153px; }
+.m-slider__next { right: 50%; margin-right: -540px; background: url('../img/icons-s28585e5ee0.png') 0 -1183px no-repeat; width: 80px; height: 153px; }
 
-.m-slider__prev { left: 50%; margin-left: -540px; background: url('../img/icons-sbff4c5b0ab.png') 0 -907px no-repeat; width: 80px; height: 153px; }
+.m-slider__prev { left: 50%; margin-left: -540px; background: url('../img/icons-s28585e5ee0.png') 0 -1020px no-repeat; width: 80px; height: 153px; }
 
 .m-block { position: relative; height: 1000px; }
 

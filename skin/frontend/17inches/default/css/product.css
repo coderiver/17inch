@@ -127,7 +127,7 @@
 .item__info-text + .item__to-basket { float: right; margin-right: 14px; }
 
 .select_s { border-width: 1px; }
-.select_s:after { background: url('../img/icons-s28585e5ee0.png') 0 -1518px no-repeat; width: 10px; height: 6px; }
+.select_s:after { background: url('../img/icons-s28585e5ee0.png') 0 -1518px no-repeat; width: 10px; height: 6px; top: 12px; }
 
 .input_s { border-width: 1px; background: transparent; }
 
