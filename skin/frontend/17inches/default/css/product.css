@@ -117,7 +117,7 @@
 .item__img { display: block; overflow: hidden; height: 310px; line-height: 310px; text-align: center; }
 .item__img img { width: 250px; }
 
-.item__actions { display: none; padding-left: 20px; margin-top: 39px; font-size: 0; }
+.item__actions { position: relative; display: none; padding: 39px 0 0 20px; font-size: 0; }
 .item__actions .select_s, .item__actions .input-plus { display: inline-block; vertical-align: middle; width: 60px; margin-right: 4px; }
 .item__actions .input-plus { position: relative; }
 .item__actions .input-plus .btn-add { position: absolute; right: 11px; top: 9px; }
@@ -125,6 +125,15 @@
 .item__info-text { display: inline-block; vertical-align: middle; margin-right: 10px; font-size: 14px; font-family: "Gotham-Book", Arial, Tahoma, sans-serif; }
 .item__info-text strong { font-weight: normal; font-family: "Gotham-Medium", Arial, Tahoma, sans-serif; }
 .item__info-text + .item__to-basket { float: right; margin-right: 14px; }
+
+.item__share { position: absolute; top: -50px; left: 0; right: 0; padding-left: 15px; height: 50px; line-height: 50px; background: white; background: rgba(255, 255, 255, 0.9); }
+.item__share .share-wrap { display: inline-block; vertical-align: middle; }
+.item__share .share-wrap img { width: auto; height: auto; }
+
+.share-wrap .select_s { height: 20px; width: 60px; margin-right: 6px; display: inline-block; vertical-align: middle; }
+.share-wrap .select_s:after { top: 7px; right: 4px; }
+.share-wrap .select__text { height: 18px; line-height: 18px; font-size: 8px; padding-left: 5px; }
+.share-wrap img { width: auto; height: auto; display: inline-block; vertical-align: middle; }
 
 .select_s { border-width: 1px; }
 .select_s:after { background: url('../img/icons-s28585e5ee0.png') 0 -1518px no-repeat; width: 10px; height: 6px; top: 12px; }
@@ -141,7 +150,7 @@
 .pagin { margin: 28px 0 0; text-align: center; font-size: 0; }
 .pagin a { display: inline-block; margin-left: 1px; width: 40px; height: 40px; font-size: 14px; line-height: 40px; text-align: center; color: white; background: #605b5b; -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; transition: background 0.2s linear; }
 .pagin a:first-child { margin-left: 0; }
-.pagin a:hover { background: #dfe6d4; }
+.pagin a:hover, .pagin a.is-active { background: #dfe6d4; }
 
 .filter { margin: 21px 0 0; font-size: 0; }
 .filter:before, .filter:after { content: ""; display: table; }
