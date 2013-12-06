@@ -4,6 +4,8 @@
 
 @font-face { font-family: "Gotham-Book"; src: url("../fonts/Gotham-Book.eot"); src: url("../fonts/Gotham-Book.eot") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"); }
 
+@font-face { font-family: "Gotham-Narrow"; src: url("../fonts/Gotham-Narrow.eot"); src: url("../fonts/Gotham-Narrow.eot") format("embedded-opentype"), url("../fonts/Gotham-Narrow.woff") format("woff"); }
+
 .main { padding-bottom: 65px; background: whitesmoke; overflow: hidden; }
 .main .title { position: relative; z-index: 10; }
 
@@ -21,9 +23,9 @@
 
 .m-slider__prev, .m-slider__next { position: absolute; top: 180px; }
 
-.m-slider__next { right: 50%; margin-right: -540px; background: url('../img/icons-sbff4c5b0ab.png') 0 -1070px no-repeat; width: 80px; height: 153px; }
+.m-slider__next { right: 50%; margin-right: -640px; background: url('../img/icons-se86d4bb36d.png') 0 -1081px no-repeat; width: 80px; height: 153px; }
 
-.m-slider__prev { left: 50%; margin-left: -540px; background: url('../img/icons-sbff4c5b0ab.png') 0 -907px no-repeat; width: 80px; height: 153px; }
+.m-slider__prev { left: 50%; margin-left: -640px; background: url('../img/icons-se86d4bb36d.png') 0 -918px no-repeat; width: 80px; height: 153px; }
 
 .m-block { position: relative; height: 1000px; }
 
