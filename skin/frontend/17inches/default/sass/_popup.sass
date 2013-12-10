@@ -52,18 +52,6 @@
 	+box
 	background: url(../img/popup-bg.png) 0 0 no-repeat
 	+background-size(100%,100%) 
-.popup__title
-	margin-bottom: 19px
-	font-size: 25px
-
-.popup__top
-	padding-top: 54px
-	text-align: center
-.popup__logo
-	display: inline-block
-	margin-bottom: 50px
-	+s(logo-popup)
-.popup__login
 	.input-big
 		padding: 0 20px 
 		width: 300px
@@ -78,8 +66,26 @@
 	a
 		display: inline-block
 		margin-left: 20px
-		font-size: 12px
+		font-size: 11px
 		text-decoration: underline
+		
+.popup__title
+	margin-bottom: 19px
+	font-size: 25px
+
+.popup__top
+	padding-top: 54px
+	text-align: center
+	p
+		font-size: 12px
+		color: #373737 
+		line-height: 1.2
+.popup__logo
+	display: inline-block
+	margin-bottom: 50px
+	+s(logo-popup)
+.popup__logo_mod
+	margin-bottom: 10px
 .btn-submit
 	position: relative
 	display: block
@@ -104,7 +110,7 @@
 		vertical-align: middle
 		display: inline-block
 	span
-		font-size: 12px
+		font-size: 11px
 	.btn-fb
 		margin-left: 37px
 	.btn-submit
@@ -130,3 +136,26 @@
 		color: #fff 
 		margin: 0
 
+.popup__email
+	font-size: 10px
+	.input-wrap
+		position: relative
+		width: 300px
+		margin: 50px auto 0 
+		.btn-submit
+			padding: 0
+			text-align: center
+			width: 100px
+			position: absolute
+			right: 0
+			top: 0
+			height: 60px
+			line-height: 60px
+			&:after
+				display: none
+	a
+		margin-left: 0 
+	.btn-fb
+		margin: 34px 0 10px
+		height: 60px
+		line-height: 60px
