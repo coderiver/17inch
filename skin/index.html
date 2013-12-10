@@ -7,86 +7,110 @@
 	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/common.css" >
 	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/index.css" >
 	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/product.css" >
+	<script src="../js/prototype/prototype.js"></script>
+	<script src="../js/scriptaculous/scriptaculous.js"></script>
+	<script src="../js/carousel.js"></script>
+	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN .wrap -->
 <div class="wrap">
 	<div class="top">
-		<div class="l-container"><a href="#">Free Shipping from 60 EURO</a></div>
-	</div>
-	<header class="header">
-		<div class="l-container">
-			<a class="logo" href="#">
-				<span class="logo__title">17inches</span>
-				<span class="logo__title-sub">The world’s #1 experience for cool & easy art</span>
-			</a>
-			<div class="header__search">
-				<input type="text" placeholder="Wonach suchst Du?">
-				<button><i></i></button>
-			</div>
-			<ul class="header__links">
-				<li><a href="#">Einloggen<i></i></a></li>
-				<li><a href="#">Registrieren<i></i></a></li>
-			</ul>
-			<div class="header__cart">1 Artikel im <a href="#">Warenkorb</a><a class="header__cart-link" href="#"><i></i></a></div>
+		<div class="top__banner">
+			<div class="l-container"><a href="#">Free Shipping from 60 EURO</a></div>
 		</div>
-	</header>
-	<nav class="nav">
-		<div class="l-container">
-			<ul class="nav__list">
-				<li class="is-active">
-					<a href="#">Neu</a>
-					<div class="nav__sub">						
-						<div class="nav__sub-in">
-							<div class="nav__sub-list">
-								<ul>
-									<li><div class="nav__sub-title">NEu</div></li>
-									<li><a href="#">Brandneu</a></li>
-									<li><a href="#">Poster</a></li>
-									<li><a href="#">Damen</a></li>
-									<li><a href="#">Herren</a></li>
-									<li><a href="#">Phone</a></li>
-									<li><a href="#">Lapptop</a></li>
-								</ul>
-								<ul>
-									<li><div class="nav__sub-title">TRENDS</div></li>
-									<li><a href="#">Street</a></li>
-									<li><a href="#">Urban</a></li>
-									<li><a href="#">Look</a></li>
-									<li><a href="#">Loremipsum</a></li>
-								</ul>
-								<div class="nav__sub-list-bg"></div>
+		<header class="header">
+			<div class="l-container">
+				<a class="logo" href="#">
+					<span class="logo__title">17inches</span>
+					<span class="logo__title-sub">The world’s #1 experience for cool & easy art</span>
+				</a>
+				<div class="header__search">
+					<input type="text" placeholder="Wonach suchst Du?">
+					<button><i></i></button>
+				</div>
+				<ul class="header__links">
+					<li>
+						<span>Einloggen<i></i></span>
+						<div class="enter">
+							<div class="enter__title">lla vel, aliquet neculputat</div>
+							<div class="enter__field">
+								<input type="text" placeholder="Benutzername">
 							</div>
-							<ul class="nav__sub-el">
-								<li class="nav__sub-el-item">
-									<div class="nav__sub-el-pic">
-										<a href="#"><img src="http://placehold.it/175x250" alt=""/></a>
-										<i></i>
-									</div>									
-									<a href="#">Lorem ipsum</a>
-								</li>
-								<li class="nav__sub-el-item">
-									<div class="nav__sub-el-pic">
-										<a href="#"><img src="http://placehold.it/175x250" alt=""/></a>
-										<i></i>
-									</div>									
-									<a href="#">Lorem ipsum</a>
-								</li>
-							</ul>
-						</div>	
-						<div class="nav__sub-bg"></div>
-						<div class="nav__sub-arr"></div>					
-					</div>
-				</li>
-				<li><a href="#">Bestseller</a></li>
-				<li><a href="#">Poster</a></li>
-				<li><a href="#">Damen</a></li>
-				<li><a href="#">Herren</a></li>
-				<li><a href="#">Phone & Laptop</a></li>
-				<li><a href="#">Stories</a></li>
- 			</ul>
-		</div>
-	</nav>
+							<div class="enter__field">
+								<input type="text" placeholder="Passwort">
+							</div>
+							<div class="enter__btn">
+								<button>anmelden</button>
+							</div>
+							<div class="enter__link">
+								<a href="#">Passwort oder Benutzername vergessen?</a>
+							</div>
+							<div class="enter__arr"></div>
+						</div>
+					</li>
+					<li><a href="#">Registrieren<i></i></a></li>
+				</ul>
+				<div class="header__cart">1 Artikel im <a href="#">Warenkorb</a><a class="header__cart-link" href="#"><i></i></a></div>
+			</div>
+		</header>
+		<nav class="nav">
+			<div class="l-container">
+				<ul class="nav__list">
+					<li class="is-active">
+						<a href="#">Neu</a>
+						<div class="nav__sub">						
+							<div class="nav__sub-in">
+								<div class="nav__sub-list">
+									<ul>
+										<li><div class="nav__sub-title">NEu</div></li>
+										<li><a href="#">Brandneu</a></li>
+										<li><a href="#">Poster</a></li>
+										<li><a href="#">Damen</a></li>
+										<li><a href="#">Herren</a></li>
+										<li><a href="#">Phone</a></li>
+										<li><a href="#">Lapptop</a></li>
+									</ul>
+									<ul>
+										<li><div class="nav__sub-title">TRENDS</div></li>
+										<li><a href="#">Street</a></li>
+										<li><a href="#">Urban</a></li>
+										<li><a href="#">Look</a></li>
+										<li><a href="#">Loremipsum</a></li>
+									</ul>
+									<div class="nav__sub-list-bg"></div>
+								</div>
+								<ul class="nav__sub-el">
+									<li class="nav__sub-el-item">
+										<div class="nav__sub-el-pic">
+											<a href="#"><img src="http://placehold.it/175x250" alt=""/></a>
+											<i></i>
+										</div>									
+										<a href="#">Lorem ipsum</a>
+									</li>
+									<li class="nav__sub-el-item">
+										<div class="nav__sub-el-pic">
+											<a href="#"><img src="http://placehold.it/175x250" alt=""/></a>
+											<i></i>
+										</div>									
+										<a href="#">Lorem ipsum</a>
+									</li>
+								</ul>
+							</div>	
+							<div class="nav__sub-bg"></div>
+							<div class="nav__sub-arr"></div>					
+						</div>
+					</li>
+					<li><a href="#">Bestseller</a></li>
+					<li><a href="#">Poster</a></li>
+					<li><a href="#">Damen</a></li>
+					<li><a href="#">Herren</a></li>
+					<li><a href="#">Phone & Laptop</a></li>
+					<li><a href="#">Stories</a></li>
+	 			</ul>
+			</div>
+		</nav>
+	</div>	
 	<div class="main">
 		<div class="m-slider">
 			<button class="m-slider__prev"></button>
@@ -132,53 +156,85 @@
 	</div>
 	<div class="l-container">
 		<h2 class="title">WAS GEHT AB</h2>
-		<div class="slider-wrap">
-			<div class="slider-main  js-prototype-slider">
+		<div class="slider-wrap js-prototype-slider">
+			<a href="javascript:" class="slider-nav carousel-control slider-nav_prev" rel="prev"></a>
+		  <a href="javascript:" class="slider-nav carousel-control slider-nav_next" rel="next"></a>
+			<div class="slider-main">
 				<div class="slider">
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    </div>
-			</div>
-		    <a href="javascript:" class="slider-nav slider-nav_prev" rel="prev"></a>
-		    <a href="javascript:" class="slider-nav slider-nav_next" rel="next"></a>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    </div>
+			</div>		 
 		</div>		
 	</div>
 	<div class="inst">
@@ -213,7 +269,7 @@
 		<div class="inst__block inst__block_10">
 			<img src="http://lorempixel.com/300/300/" alt="">
 		</div>
-		<div class="inst__logo">17inches</div>
+		<div class="inst__logo">#17inches</div>
 		<div class="inst__arr"></div>
 	</div>	
 	<div class="l-container">

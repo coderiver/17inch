@@ -4,6 +4,7 @@
 $c: #f1cda4
 $gr: #dfe6d4
 $brown: #605b5b
+$orange: #e2bc90
 
 //fonts 
 @font-face
@@ -18,12 +19,18 @@ $brown: #605b5b
 	font-family: 'Gotham-Book'
 	src: url('../fonts/Gotham-Book.eot')
 	src: url('../fonts/Gotham-Book.eot') format('embedded-opentype'), url('../fonts/Gotham-Book.woff') format('woff')
+@font-face
+	font-family: 'Gotham-Narrow'
+	src: url('../fonts/Gotham-Narrow.eot')
+	src: url('../fonts/Gotham-Narrow.eot') format('embedded-opentype'), url('../fonts/Gotham-Narrow.woff') format('woff')
 @mixin f
 	font-family: 'Gotham-Medium', Arial, Tahoma, sans-serif 
 @mixin fl
 	font-family: 'Gotham-XLightItalic', Arial, Tahoma, sans-serif 
 @mixin fboo
 	font-family: 'Gotham-Book', Arial, Tahoma, sans-serif 
+@mixin fn
+	font-family: 'Gotham-Narrow', Arial, Tahoma, sans-serif 
 
 //sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px)
