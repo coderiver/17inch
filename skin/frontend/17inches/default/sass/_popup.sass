@@ -1,0 +1,46 @@
+@import "base"
+.overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 5000
+	background: $brown 
+.popup
+	position: absolute
+	width: 1080px
+	top: 100px
+	left: 50%
+	z-index: 10000
+	padding: 43px 0 70px
+	margin-left: -540px
+	background: #fff
+	.gallery
+		padding-left: 50px
+		width: 600px
+		+box 
+	.item-info
+		padding-right: 10px
+	.gallery__prev,
+	.gallery__next
+		position: absolute
+		top: 50%
+		margin-top: -76px
+	.gallery__prev
+		left: -120px
+		+s(m-slider-prev)
+	.gallery__next
+		right: -120px
+		+s(m-slider-next)
+.popup__close
+	position: absolute
+	top: 9px
+	right: 9px
+	+s(close)
+.popup__link
+	position: absolute
+	right: 10px
+	bottom: 15px
+	font-size: 12px
+	text-decoration: underline
