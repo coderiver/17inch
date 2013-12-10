@@ -41,6 +41,92 @@
 .popup__link
 	position: absolute
 	right: 10px
-	bottom: 15px
+	bottom: 15px  
 	font-size: 12px
 	text-decoration: underline
+	
+.popup_small
+	margin-left: -410px
+	padding: 0 40px 50px 60px 
+	width: 820px
+	+box
+	background: url(../img/popup-bg.png) 0 0 no-repeat
+	+background-size(100%,100%) 
+.popup__title
+	margin-bottom: 19px
+	font-size: 25px
+
+.popup__top
+	padding-top: 54px
+	text-align: center
+.popup__logo
+	display: inline-block
+	margin-bottom: 50px
+	+s(logo-popup)
+.popup__login
+	.input-big
+		padding: 0 20px 
+		width: 300px
+		height: 60px
+		background: #fff
+		font-size: 14px 
+		+box
+	.input-wrap
+		margin-bottom: 13px
+	.input-wrap_fb
+		margin-bottom: 6px
+	a
+		display: inline-block
+		margin-left: 20px
+		font-size: 12px
+		text-decoration: underline
+.btn-submit
+	position: relative
+	display: block
+	padding-left: 30px
+	width: 300px
+	+box
+	height: 70px
+	line-height: 70px  
+	text-align: left
+	background: #e2bc90 
+	&:after
+		content: ""
+		position: absolute
+		margin-top: -7px
+		top: 50%
+		right: 30px
+		+s(arr1) 
+
+.input-wrap_fb
+	.btn-submit,
+	span
+		vertical-align: middle
+		display: inline-block
+	span
+		font-size: 12px
+	.btn-fb
+		margin-left: 37px
+	.btn-submit
+		margin-right: 37px
+.btn-fb
+	position: relative
+	width: 300px
+	height: 70px
+	line-height: 70px
+	text-align: left
+	+box
+	display: inline-block
+	background: #38599a 
+	vertical-align: middle
+	span, i
+		display: inline-block
+		vertical-align: middle
+	i
+		margin: 0 45px 0 30px 
+		+s(btn-fb)
+	span
+		font-size: 14px
+		color: #fff 
+		margin: 0
+
