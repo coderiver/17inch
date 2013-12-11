@@ -7,6 +7,12 @@ $brown: #605b5b
 $orange: #e2bc90
 
 //fonts 
+@font-face 
+	font-family: 'gotham_narrowmedium'
+	src: url('../fonts/gothamnarrow-medium-webfont.eot')
+	src: url('../fonts/gothamnarrow-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gothamnarrow-medium-webfont.woff') format('woff'), url('../fonts/gothamnarrow-medium-webfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
 @font-face
 	font-family: 'Gotham-Medium'
 	src: url('../fonts/Gotham-Medium.eot')
@@ -23,7 +29,10 @@ $orange: #e2bc90
 	font-family: 'Gotham-Narrow'
 	src: url('../fonts/Gotham-Narrow.eot')
 	src: url('../fonts/Gotham-Narrow.eot') format('embedded-opentype'), url('../fonts/Gotham-Narrow.woff') format('woff')
+	
 @mixin f
+	font-family: 'gotham_narrowmedium', Arial, Tahoma, sans-serif 
+@mixin fm
 	font-family: 'Gotham-Medium', Arial, Tahoma, sans-serif 
 @mixin fl
 	font-family: 'Gotham-XLightItalic', Arial, Tahoma, sans-serif 
@@ -46,7 +55,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 $svg: "svg/"
 @mixin svg($name, $width, $height)
 	width: $width + px
-	height: $height + px
+	height: $height + px   
 	background-image: inline-image($svg + $name + ".svg")
 	-webkit-background-size: 100% 100%
 	background-size: 100% 100%	

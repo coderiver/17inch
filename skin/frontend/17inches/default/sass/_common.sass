@@ -31,7 +31,7 @@ input, button
 	border: 0
 	+f
 	font-size: 14px
-input, textarea, select,button,
+input, textarea, select,button,   
 h1,h2,h3,h4,h5,h6,a,span,a:focus 
 	outline: none
 	text-transform: uppercase
@@ -42,7 +42,7 @@ table
 	border-collapse: collapse
 	width: 100%
 body
-	+f
+	+f  
 	font-weight: normal 
 	font-size: 14px
 	line-height: 1.4  
@@ -276,7 +276,8 @@ $hf: 525px
 .nav__list
 	font-size: 0 
 	text-align: center
-	> li
+	+fm  
+	> li  
 		position: relative
 		display: inline-block
 		vertical-align: top
