@@ -1,0 +1,82 @@
+.blog
+	padding-top: 55px
+	+clr
+.blog__item
+	float: left
+.blog__item_width-4
+	width: 1080px
+	.blog__content
+		width: 540px 
+.blog__item_width-2
+	width: 540px
+	.blog__content
+		width: 270px 
+.blog__item_height-1
+	height: 270px
+	.blog__content
+		height: 270px 
+.blog__item_height-2
+	height: 540px
+	.blog__content
+		height: 540px 
+.blog__column
+	float: left
+	width: 50%
+.blog__content
+	display: table-cell
+	padding: 35px
+	background: $gr 
+	vertical-align: middle
+	+box
+	text-align: center
+.blog__title
+	position: relative
+	padding-bottom: 30px 
+	font-size: 20px
+	&:after
+		content: ""
+		position: absolute
+		bottom: 15px
+		left: 50%
+		margin-left: -15px
+		+s(blog-title) 
+.blog__content_black-right, .blog__content_black-left
+	position: relative
+	background: #373737
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: -45px
+		margin-top: -45px
+		+arr(45,90,#373737,r)
+	.blog__text, .blog__title 
+		color: #fff
+	.blog__title
+		&:after
+			+s(blog-title-white)
+.blog__content_black-left
+	&:after
+		right: auto
+		left: -45px
+		margin-top: -45px
+		+arr(45,90,#373737,l)
+.blog__content_white-right, .blog__content_white-left
+	position: relative
+	background: #fff
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: -45px
+		margin-top: -45px
+		+arr(45,90,#fff,r)
+.blog__content_white-left
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: auto
+		left: -45px
+		margin-top: -45px
+		+arr(45,90,#fff,l)
