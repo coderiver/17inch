@@ -1,0 +1,134 @@
+@import "base"
+.to-right
+	text-align: right
+	.to-basket
+		display: inline-block
+		margin: 55px 0 77px
+		width: 300px
+		text-align: left
+		padding-left: 25px
+.cart
+	margin-bottom: 64px
+	th
+		padding-bottom: 10px
+		font-size: 18px
+		border-bottom: 2px solid 
+		text-align: left
+		&:first-child
+			padding-left: 40px
+	tbody
+		td
+			padding: 15px 0
+			border-bottom: 1px solid 
+			vertical-align: top
+			&:first-child
+				width: 400px
+			strong
+				font-weight: normal
+				font-size: 18px
+			sub
+				font-size: 10px
+		tr
+			&:last-child
+				td
+					border-bottom: none
+		.cart__select
+			td
+				border-bottom-width: 2px
+		.btn-del
+			float: right 
+.cart__img
+	float: left
+	margin-right: 30px
+.cart__title
+	float: left
+	font-size: 12px
+	strong
+		display: block
+.cart__list
+	width: 105px
+	font-size: 12px
+	li
+		+clr
+	span
+		float: left
+		width: 50%
+		text-align: right 
+		&:first-child
+			text-align: left
+.btn-del
+	+s(close)
+.cart__sum
+	td
+		&:first-child
+			padding-left: 40px
+	span
+		font-size: 12px
+			
+.select_smaller
+	display: inline-block
+	vertical-align: middle
+	height: 23px
+	min-width: 50px
+	border-width: 1px
+	&:after
+		top: 8px
+		right: 5px
+		+s(arr-select-small)
+	.select__text
+		height: 21px
+		padding: 0 7px 
+		line-height: 21px
+.cart-action
+	margin-bottom: 90px
+	.to-shopping
+		float: left
+	.to-basket
+		margin-bottom: 19px
+.cart-action__right
+	float: right
+	width: 300px
+.to-shopping
+	position: relative
+	display: block
+	padding-right: 40px
+	width: 300px
+	height: 70px
+	line-height: 70px
+	background: #dfe6d4
+	font-size: 14px
+	text-align: right  
+	+transition(background .2s linear)
+	+box 
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 35px
+		margin-top: -9px
+		+s(arr2) 
+	&:hover
+		background: #e1e1e1 
+		
+.to-paypal
+	position: relative
+	display: block
+	padding-left: 30px
+	width: 300px
+	height: 70px
+	line-height: 70px
+	background: #9ad0de
+	font-size: 14px
+	text-align: left 
+	color: #fff  
+	+transition(background .2s linear)
+	+box 
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: 40px
+		margin-top: -11px
+		+s(paypal) 
+	&:hover
+		background: #4fa1b6
