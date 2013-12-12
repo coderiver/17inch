@@ -58,17 +58,17 @@ button
 		padding: 0
 		border: 0
 //general
-$hf: 525px
+$hf: 411px
 .wrap
 	min-height: 100%
 	height: auto !important
 	height: 100%
 	margin: 0 auto (-$hf)
 .wrap_top-fixed
-	padding-top: 220px
+	padding-top: 120px
 	.top
 		position: fixed
-		top: -30px
+		top: -23px
 		left: 0
 		right: 0
 		z-index: 2000
@@ -78,56 +78,47 @@ $hf: 525px
 	height: $hf
 	clear: both
 .l-container
-	width: 1080px
+	width: 860px
 	margin: 0 auto
 .clr
 	+clr
 //top
 .top
-	height: 220px
+	height: 120px
 	background: #EBEBEB 
+.top__banner
 	.l-container
-		height: 30px 
-		line-height: 30px
-		font-size: 12px
+		height: 23px 
+		line-height: 23px
+		font-size: 10px
 		color: #585858		
-		text-align: center
-		 
+		text-align: center		 
 
 //header
 .header
-	height: 120px
 	background: #3B3B3B 
 	.l-container
 		position: relative
+		height: 67px
 .logo
 	position: absolute
-	top: 15px
+	top: 50%
 	left: 50%
 	width: 260px
-	margin-left: -130px
+	margin: -14px 0 0 -71px
 	text-align: center
 	font-size: 0
 	text-transform: none
-.logo__title
-	display: inline-block
 	+s(logo)
 	+ht
-.logo__title-sub
-	display: block
-	+fl
-	font-size: 12px
-	color: #DEE6D3 
-	text-transform: none
-	line-height: 1.3
 .header__search
 	position: absolute
 	top: 1px
 	left: 0	
 	input
-		width: 210px
-		height: 35px
-		padding: 0 35px 0 20px
+		width: 164px
+		height: 28px
+		padding: 0 30px 0 16px
 		background-color: #484849
 		+fl
 		font-size: 11px
@@ -138,8 +129,8 @@ $hf: 525px
 		position: absolute
 		top: 0
 		right: 0
-		width: 35px
-		height: 35px
+		width: 28px
+		height: 28px
 		font-size: 0
 		&:hover
 			background: #DFE6D4 
@@ -166,10 +157,10 @@ $hf: 525px
 		& > a, & > span
 			position: relative
 			display: inline-block
-			width: 130px
-			height: 35px
-			padding-left: 30px
-			line-height: 35px 
+			width: 104px
+			height: 28px
+			padding-left: 24px
+			line-height: 28px 
 			background-color: #484849
 			+fl
 			font-size: 11px
@@ -178,40 +169,43 @@ $hf: 525px
 			text-align: left
 	i
 		position: absolute
-		top: 12px
+		top: 50%
 		right: 15px
+		margin-top: -5px
 		+s(h-links-arr)
 .enter
 	display: none
 	position: absolute
 	top: 100%
 	left: 0
-	width: 300px
-	padding: 35px 40px 10px
+	width: 225px
+	padding: 26px 30px 7px
 	background: $gr
 	z-index: 500
 .enter__title
-	margin-bottom: 35px
+	margin-bottom: 26px
 	//+fn
-	font-size: 20px
+	font-size: 15px
 	color: #373737
 	text-align: center
 	white-space: nowrap
 .enter__field
-	margin-bottom: 13px
+	margin-bottom: 10px
 	input
 		width: 100%
-		height: 60px
-		padding: 0 20px
+		height: 45px
+		padding: 0 15px
 		text-transform: uppercase
+		font-size: 12px
 		+box
 .enter__btn
 	button
 		position: relative
 		width: 100%
-		height: 70px
-		padding: 0 30px
+		height: 53px
+		padding: 0 23px
 		+tr(background .2s linear)
+		font-size: 12px
 		background: $orange
 		text-align: left
 		overflow: visible
@@ -219,55 +213,53 @@ $hf: 525px
 			content: ""
 			position: absolute
 			top: 50%
-			right: 30px
-			margin-top: -9px
+			right: 23px
+			margin-top: -7px
 			+s(arr1-bigger)
 		&:hover
 			background: $gr
 .enter__link
-	margin-top: 18px
+	margin-top: 14px
 	text-align: center
-	font-style: 12px
+	font-size: 10px
 	text-decoration: underline
 .enter__arr
 	position: absolute
-	bottom: -60px
+	bottom: -50px
 	left: 0
 	right: 0
-	height: 60px
+	height: 50px
 	background-image: url(../img/arr-green.png) 
 	background-repeat: no-repeat
 	background-position: 0 100%
-
 .header__cart
 	position: absolute
-	top: 60px 
+	top: 27px 
 	right: 0
-	padding-right: 45px
-	+fl
-	color: #FFF
-	line-height: 1
-	text-transform: none
-	a
-		color: #FFF
-		border-bottom: 1px solid #7d7d7d 
-	.header__cart-link 
+	width: 26px
+	height: 26px
+	i
 		position: absolute
-		top: -10px
-		right: 0
-		width: 33px
-		height: 33px
-		border: none
-		+tr(background .2s linear)
+		top: 6px
+		left: 6px
+		+s(h-cart-ico)
+	span
+		position: absolute
+		top: 1px
+		right: -3px
+		width: 12px
+		height: 12px
+		background: $gr
+		border-radius: 50% 
+		font-family: Arial, Tahoma, sans-serif 
+		text-align: center
+		line-height: 12px
+		font-style: italic
+		font-size: 10px 
+	&:hover
+		background: $gr 
 		i
-			position: absolute
-			top: 9px
-			left: 9px
-			+s(h-cart-ico)
-		&:hover
-			background: $gr 
-			i
-				+s(h-cart-ico-h)
+			+s(h-cart-ico-dark)
 
 //nav
 .nav
@@ -288,10 +280,10 @@ $hf: 525px
 				display: block
 		> a
 			display: block
-			height: 70px
-			padding: 0 25px
-			line-height: 70px
-			font-size: 18px
+			height: 30px
+			padding: 0 20px
+			line-height: 30px
+			font-size: 16px
 			text-transform: none
 .nav__sub	
 	display: none
@@ -303,7 +295,7 @@ $hf: 525px
 	z-index: 500 
 .nav__sub-in
 	position: relative
-	padding: 55px 90px 90px 55px	
+	padding: 45px 65px 65px 45px	
 	white-space: nowrap
 	z-index: 10 
 .nav__sub-list-bg
@@ -316,21 +308,21 @@ $hf: 525px
 .nav__sub-list
 	position: relative
 	display: inline-block
-	width: 175px
-	margin-right: 65px
+	width: 120px
+	padding-right: 20px
+	margin-right: 50px
 	vertical-align: top
 	white-space: normal
 	ul
-		margin-bottom: 30px
+		margin-bottom: 23px
 	li
-		margin-bottom: 5px
+		margin-bottom: 4px
 	a
 		font-size: 12px
 		color: #595957 		
 .nav__sub-title
-	margin-bottom: 25px
-	font-size: 25px
-	
+	margin-bottom: 20px
+	font-size: 20px	
 	line-height: 1
 .nav__sub-bg, .nav__sub-arr
 	position: absolute
@@ -339,76 +331,82 @@ $hf: 525px
 	z-index: 5 
 .nav__sub-bg
 	top: 0
-	bottom: 120px
+	bottom: 150px
 	background: $gr
 .nav__sub-arr
 	bottom: 0  
-	height: 120px
+	height: 150px
 	background-image: url(../img/arr-green.png) 
 	background-repeat: no-repeat
-	background-size: 100% 100%
+	background-position: 0 100%
 .nav__sub-el
 	display: inline-block
 	vertical-align: top
 .nav__sub-el-item
 	display: inline-block
-	width: 175px
-	margin-left: 20px 
+	width: 140px
+	margin-left: 15px 
 	vertical-align: top
 	text-align: center
 	white-space: normal
 	&:first-child
 		margin: 0
-	a
+	& > a
+		position: relative
 		display: block
-		font-size: 12px
-		
-		color: #595957 
+		padding-top: 22px
+		font-size: 10px		
+		color: #595957
+		&:before
+			content: ""
+			position: absolute
+			top: 8px
+			left: 50%
+			width: 52px
+			height: 7px
+			margin-left: -26px 
+			background: url(../img/icons/wave-hor.png) repeat-x 
 .nav__sub-el-pic
-	i
-		display: inline-block
-		width: 52px
-		height: 7px
-		margin: 8px 0 18px
-		background: url(../img/icons/wave-hor.png) repeat-x
+	img
+		display: block
 				
 
 
 //footer
 .footer
 	position: relative
-	height: 515px - 75px
-	padding-top: 75px
+	height: 460px * .75
+	padding-top: 58px
 	background: #F7F7F7 
-	border-top: 10px solid $c 
+	border-top: 8px solid $c 
 	+fboo
 	color: #333 
 .footer__l
-	padding: 0 70px
-	margin-bottom: 55px
+	padding: 0 53px
+	margin-bottom: 41px
 	font-size: 0
 .footer__col-1,
 .footer__col-2,
 .footer__col-3
 	display: inline-block
-	margin-right: 20px
+	margin-right: 15px
 	vertical-align: top
 .footer__col-1
-	width: 380px
+	width: 380px * .75
 .footer__col-2
-	width: 300px
+	width: 300px * .75
 .footer__col-3
-	width: 220px
+	width: 220px * .75
 	margin: 0
 .footer__title
-	margin-bottom: 15px
-	font-size: 15px
+	margin-bottom: 15px * .75
+	font-size: 15px * .75
 	
 .footer__nav
 	li
-		margin-bottom: 10px
+		margin-bottom: 10px * .75
 	a
-		font-size: 12px
+		font-size: 12px * .75
 		color: #ADADAD
 		 
 		
@@ -417,7 +415,7 @@ $hf: 525px
 .pay-sys__item, .footer__delivered-item
 	display: inline-block
 	vertical-align: top
-	margin-right: 15px 
+	margin-right: 15px * .75 
 .pay-sys__item_visa
 	+s(pay-sys-visa)
 .pay-sys__item_mastercard
@@ -432,31 +430,31 @@ $hf: 525px
 	+s(delivered-dhl)
 
 .footer__social-item
-	margin-bottom: 14px 
+	margin-bottom: 14px * .75 
 	
 .footer__down
 	position: absolute
 	bottom: 0
 	left: 0
 	right: 0
-	height: 60px 
+	height: 60px * .75 
 	background: #333
 	
-	font-size: 11px
+	font-size: 11px * .75
 	color: #FFF 
 	.l-container
 		+clr
 .copyright
 	float: left
-	height: 60px
-	line-height: 60px	
+	height: 60px * .75
+	line-height: 60px * .75	
 .footer__down-nav
 	float: right
-	margin: 26px 0 0 0
+	margin: 26px * .75 0 0 0
 	ul, li
 		float: left
 	li
-		padding: 0 8px
+		padding: 0 8px * .75
 		border-left: 1px solid #fff 
 		line-height: 1
 		&:first-child
@@ -466,20 +464,19 @@ $hf: 525px
 		
 
 .breadcrumbs
-	margin: 15px 0 20px 
+	margin: 15px * .75 0 20px * .75 
 	font-size: 0
 	a,span
 		position: relative
 		display: inline-block
-		margin-left: 72px
+		margin-left: 72px * .75
 		+fboo
-		font-size: 14px
-		
+		font-size: 14px * .75		
 		&:before
 			content: ""
 			position: absolute
-			left: -32px
-			top: 2px
+			left: -32px * .75
+			top: 2px * .75
 			+s(arr1)
 		&:first-child
 			margin-left: 0
@@ -488,24 +485,23 @@ $hf: 525px
 
 .title
 	position: relative
-	margin: 78px 0 57px
-	font-size: 24px
+	margin: 60px * .75 0 45px * .75
+	font-size: 20px
 	font-weight: normal 
-	text-align: center
-	
+	text-align: center	
 	&:after
 		content: ""
 		position: absolute
 		left: 50%
-		bottom: -16px
-		margin-left: -41px
+		bottom: -12px * .75
+		margin-left: -31px * .75
 		+s(title) 
 
 .soc
 	position: relative
-	margin: 84px 0 105px 
-	height: 70px
-	line-height: 70px
+	margin: 84px * .75 0 105px * .75 
+	height: 51px
+	line-height: 51px
 	font-size: 0
 	text-align: center
 	&:before,
@@ -513,21 +509,21 @@ $hf: 525px
 		content: ""
 		position: absolute
 		left: 50%
-		margin-left: -70px
-		width: 140px
+		margin-left: -51px
+		width: 102px
 		height: 1px
 		background: #160b19  
 	&:before
-		top: 0
+		top: -1px
 	&:after
-		bottom: 0
+		bottom: -1px
 .soc__link
 	display: inline-block
-	height: 68px 
-	width: 68px
-	line-height: 68px
+	height: 51px
+	width: 51px
+	line-height: 51px
 	text-align: center
-	vertical-align: middle
+	vertical-align: top
 	+transition(background .1s linear)
 	&:first-child
 		margin-left: 0
@@ -535,8 +531,9 @@ $hf: 525px
 		position: relative
 		z-index: 2
 	&:active
-		position: relative
-		top: 1px
+		i
+			position: relative
+			top: 1px
 	i
 		display: inline-block
 		vertical-align: middle
@@ -590,61 +587,60 @@ $hf: 525px
 		+s(soc-em)
 
 .field
-	margin-bottom: 7px
+	margin-bottom: 7px * .75
 	font-size: 0
 .field__text
 	display: inline-block
 	vertical-align: middle
-	width: 120px
-	
-	font-size: 14px
+	width: 120px * .75	
+	font-size: 14px * .75
 .field__main
 	display: inline-block
 	vertical-align: middle
-	width: 180px
+	width: 180px * .75
 	vertical-align: middle
 	
 .select
 	position: relative
-	height: 30px
+	height: 30px * .75
 	+box
 	border: 2px solid #3c3c3c
 	&:after
 		content: ""
 		position: absolute
-		top: 10px
-		right: 9px
+		top: 10px * .75
+		right: 9px * .75
 		+s(arr-select) 
 		z-index: 1000
 .select__text
 	position: relative 
 	display: block
-	padding-left: 13px
+	padding-left: 13px * .75
 	width: 85%
-	height: 28px 
+	height: 28px * .75
 	white-space: nowrap
 	text-overflow: ellipsis 
 	cursor: pointer
 	+box
 	color: #3c3c3c
-	font-size: 11px
-	line-height: 28px
+	font-size: 11px * .75
+	line-height: 28px * .75
 	
 .select__list
 	display: none
 	position: absolute
-	top: 32px
+	top: 32px * .75
 	left: -2px
 	right: -2px 
 	+box
 	border: 2px solid #3c3c3c
 	li
-		height: 30px
+		height: 30px * .75
 		+box
 		border-top: 2px solid #3c3c3c
-		font-size: 11px
-		line-height: 30px
-		padding: 0 13px
+		font-size: 11px * .75
+		line-height: 30px * .75
+		padding: 0 13px * .75
 		white-space: nowrap
 		text-overflow: ellipsis 
 		&:first-child
@@ -654,18 +650,18 @@ $hf: 525px
 	display: block
 	width: 100%
 	+box
-	height: 30px 
-	padding: 0 13px 
-	font-size: 11px
+	height: 30px * .75
+	padding: 0 13px * .75
+	font-size: 11px * .75
 	border: 2px solid #3c3c3c
-.input_digit
+.input_digi
 	display: inline-block
-	width: 60px 
+	width: 60px * .75
 	text-align: right
 	vertical-align: middle
 .btn-add
 	display: inline-block
-	margin-left: 6px
+	margin-left: 6px * .75
 	vertical-align: middle
 	+s(plus)
 
