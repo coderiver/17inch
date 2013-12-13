@@ -2,7 +2,7 @@ document.observe('dom:loaded', function(){
 
   //header fixed
   Event.observe(window, "scroll", function() {
-    var value = $$('body')[0].scrollTop;
+    var value = $$('html')[0].scrollTop;
     if (value > 23)
       $$('.wrap')[0].addClassName('wrap_top-fixed');
     else
