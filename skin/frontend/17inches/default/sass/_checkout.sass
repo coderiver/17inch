@@ -8,19 +8,34 @@
 		padding-left: 0
 .l-col-3_fixed-height
 	position: relative
-	height: 330px
+	height: 345px
 	+box
 	padding-bottom: 53px
+	&:first-child
+		.btn-submit
+			left: 0
 	.btn-submit
 		position: absolute
 		bottom: 0
-		left: 0
+		left: 16px
 .checkout
 	.list
 		margin-bottom: 27px
 		font-size: 10px
 	.btn-fb
-		margin-bottom: 30px
+		margin-bottom: 10px
+	.input-wrap
+		width: 240px
+		margin-bottom: 10px
+	.input-big
+		width: 100%
+		border: 1px solid rgba(237,237,237,.39)
+	.btn-submit,
+	.btn-fb
+		width: 240px
+		+box
+	.to-center
+		margin: 5px 0 10px
 .checkout__title
 	margin-bottom: 34px
 	padding-bottom: 7px
@@ -32,3 +47,27 @@
 
 .to-center
 	text-align: center
+
+.step
+	position: relative
+	height: 40px
+.step__count
+	position: absolute
+	width: 40px
+	height: 40px
+	text-align: center
+	line-height: 40px
+	font-size: 18px
+	border-radius: 50%
+	background: #f5f5f5
+	text-shadow: 1px 1px 1px #fff
+	box-shadow: inset 2px 1px 2px #ebebeb   
+.step__1
+	left: 0
+	margin-left: -20px
+.step__2
+	left: 50%
+	margin-left: -20px 
+.step__3
+	right: 0
+	margin-right: -20px

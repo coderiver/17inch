@@ -263,6 +263,21 @@
 			left: 4px
 			top: 2px
 			+s(list-style)   
+.list
+	+clr
+	li
+		position: relative
+		float: left
+		margin-bottom: 3px
+		padding-left: 22px*$k
+		width: 50%
+		+box  
+		&:after
+			content: ""
+			position: absolute
+			left: 4px
+			top: 2px
+			+s(list-style)  
 .item-wrap
 	margin-right: -30px*$k
 	font-size: 0
