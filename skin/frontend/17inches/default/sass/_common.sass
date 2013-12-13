@@ -14,7 +14,7 @@ output, ruby, section, summary,time, mark, audio, video
 body, html
 	height: 100%    
 body
-	min-width: 1080px
+	min-width: 1080px*$k
 img,fieldset 
 	border: none
 input[type="submit"]
@@ -30,7 +30,7 @@ input, button
 	padding: 0
 	border: 0
 	+f
-	font-size: 14px
+	font-size: 14px*$k
 input, textarea, select,button,   
 h1,h2,h3,h4,h5,h6,a,span,a:focus 
 	outline: none
@@ -44,7 +44,7 @@ table
 body
 	+f  
 	font-weight: normal 
-	font-size: 14px
+	font-size: 14px*$k
 	line-height: 1.4  
 	text-transform: uppercase
 a
@@ -58,17 +58,17 @@ button
 		padding: 0
 		border: 0
 //general
-$hf: 411px
+$hf: 525px*$k
 .wrap
 	min-height: 100%
 	height: auto !important
 	height: 100%
 	margin: 0 auto (-$hf)
 .wrap_top-fixed
-	padding-top: 120px
+	padding-top: 220px*$k
 	.top
 		position: fixed
-		top: -23px
+		top: -30px*$k
 		left: 0
 		right: 0
 		z-index: 2000
@@ -78,10 +78,11 @@ $hf: 411px
 	height: $hf
 	clear: both
 .l-container
-	width: 860px
+	width: 1080px*$k
 	margin: 0 auto
 .clr
 	+clr
+//top
 //top
 .top
 	height: 120px
@@ -375,38 +376,38 @@ $hf: 411px
 //footer
 .footer
 	position: relative
-	height: 460px * .75
-	padding-top: 58px
+	height: 515px*$k - 75px*$k
+	padding-top: 75px*$k
 	background: #F7F7F7 
-	border-top: 8px solid $c 
+	border-top: 10px solid $c 
 	+fboo
 	color: #333 
 .footer__l
-	padding: 0 53px
-	margin-bottom: 41px
+	padding: 0 70px*$k
+	margin-bottom: 55px*$k
 	font-size: 0
 .footer__col-1,
 .footer__col-2,
 .footer__col-3
 	display: inline-block
-	margin-right: 15px
+	margin-right: 20px*$k
 	vertical-align: top
 .footer__col-1
-	width: 380px * .75
+	width: 380px*$k
 .footer__col-2
-	width: 300px * .75
+	width: 300px*$k
 .footer__col-3
-	width: 220px * .75
+	width: 220px*$k
 	margin: 0
 .footer__title
-	margin-bottom: 15px * .75
-	font-size: 15px * .75
+	margin-bottom: 15px*$k
+	font-size: 15px*$k
 	
 .footer__nav
 	li
-		margin-bottom: 10px * .75
+		margin-bottom: 10px*$k
 	a
-		font-size: 12px * .75
+		font-size: 12px*$k
 		color: #ADADAD
 		 
 		
@@ -415,7 +416,7 @@ $hf: 411px
 .pay-sys__item, .footer__delivered-item
 	display: inline-block
 	vertical-align: top
-	margin-right: 15px * .75 
+	margin-right: 15px*$k 
 .pay-sys__item_visa
 	+s(pay-sys-visa)
 .pay-sys__item_mastercard
@@ -430,31 +431,31 @@ $hf: 411px
 	+s(delivered-dhl)
 
 .footer__social-item
-	margin-bottom: 14px * .75 
+	margin-bottom: 14px*$k 
 	
 .footer__down
 	position: absolute
 	bottom: 0
 	left: 0
 	right: 0
-	height: 60px * .75 
+	height: 60px*$k 
 	background: #333
 	
-	font-size: 11px * .75
+	font-size: 11px*$k
 	color: #FFF 
 	.l-container
 		+clr
 .copyright
 	float: left
-	height: 60px * .75
-	line-height: 60px * .75	
+	height: 60px*$k
+	line-height: 60px*$k	
 .footer__down-nav
 	float: right
-	margin: 26px * .75 0 0 0
+	margin: 26px*$k 0 0 0
 	ul, li
 		float: left
 	li
-		padding: 0 8px * .75
+		padding: 0 8px*$k
 		border-left: 1px solid #fff 
 		line-height: 1
 		&:first-child
@@ -464,19 +465,20 @@ $hf: 411px
 		
 
 .breadcrumbs
-	margin: 15px * .75 0 20px * .75 
+	margin: 15px*$k 0 20px*$k 
 	font-size: 0
 	a,span
 		position: relative
 		display: inline-block
-		margin-left: 72px * .75
+		margin-left: 72px*$k
 		+fboo
-		font-size: 14px * .75		
+		font-size: 14px*$k
+		
 		&:before
 			content: ""
 			position: absolute
-			left: -32px * .75
-			top: 2px * .75
+			left: -32px*$k
+			top: 2px
 			+s(arr1)
 		&:first-child
 			margin-left: 0
@@ -485,23 +487,24 @@ $hf: 411px
 
 .title
 	position: relative
-	margin: 60px * .75 0 45px * .75
-	font-size: 20px
+	margin: 78px*$k 0 57px*$k
+	font-size: 24px*$k
 	font-weight: normal 
-	text-align: center	
+	text-align: center
+	
 	&:after
 		content: ""
 		position: absolute
 		left: 50%
-		bottom: -12px * .75
-		margin-left: -31px * .75
+		bottom: -16px*$k
+		margin-left: -41px*$k
 		+s(title) 
 
 .soc
 	position: relative
-	margin: 84px * .75 0 105px * .75 
-	height: 51px
-	line-height: 51px
+	margin: 84px*$k 0 105px*$k 
+	height: 70px*$k
+	line-height: 70px*$k
 	font-size: 0
 	text-align: center
 	&:before,
@@ -509,21 +512,21 @@ $hf: 411px
 		content: ""
 		position: absolute
 		left: 50%
-		margin-left: -51px
-		width: 102px
+		margin-left: -70px*$k
+		width: 140px*$k
 		height: 1px
 		background: #160b19  
 	&:before
-		top: -1px
+		top: 0
 	&:after
-		bottom: -1px
+		bottom: 0
 .soc__link
 	display: inline-block
-	height: 51px
-	width: 51px
-	line-height: 51px
+	height: 68px*$k 
+	width: 68px*$k
+	line-height: 68px*$k
 	text-align: center
-	vertical-align: top
+	vertical-align: middle
 	+transition(background .1s linear)
 	&:first-child
 		margin-left: 0
@@ -531,16 +534,14 @@ $hf: 411px
 		position: relative
 		z-index: 2
 	&:active
-		i
-			position: relative
-			top: 1px
+		position: relative
+		top: 1px
 	i
 		display: inline-block
 		vertical-align: middle
 .soc__in
 	&:hover
 		background: #408bb2
-		box-shadow: 0 0 0 1px #408bb2
 		i
 			+s(soc-in-white)
 	i
@@ -548,7 +549,6 @@ $hf: 411px
 .soc__th
 	&:hover
 		background: #8d9292
-		box-shadow: 0 0 0 1px #8d9292
 		i
 			+s(soc-th-white)
 	i
@@ -556,7 +556,6 @@ $hf: 411px
 .soc__fb
 	&:hover
 		background: #1d5a93
-		box-shadow: 0 0 0 1px #1d5a93
 		i
 			+s(soc-fb-white)
 	i
@@ -564,7 +563,6 @@ $hf: 411px
 .soc__tw
 	&:hover
 		background: #b0e3e9
-		box-shadow: 0 0 0 1px #b0e3e9
 		i
 			+s(soc-tw-white)
 	i
@@ -572,7 +570,6 @@ $hf: 411px
 .soc__pi
 	&:hover
 		background: #e90e0e 
-		box-shadow: 0 0 0 1px #e90e0e
 		i
 			+s(soc-pi-white)
 	i
@@ -580,67 +577,67 @@ $hf: 411px
 .soc__em
 	&:hover
 		background: #dae2cf
-		box-shadow: 0 0 0 1px #dae2cf
 		i
 			+s(soc-em-white)
 	i
 		+s(soc-em)
 
 .field
-	margin-bottom: 7px * .75
+	margin-bottom: 7px*$k
 	font-size: 0
 .field__text
 	display: inline-block
 	vertical-align: middle
-	width: 120px * .75	
-	font-size: 14px * .75
+	width: 120px*$k
+	
+	font-size: 14px*$k
 .field__main
 	display: inline-block
 	vertical-align: middle
-	width: 180px * .75
+	width: 180px*$k
 	vertical-align: middle
 	
 .select
 	position: relative
-	height: 30px * .75
+	height: 30px*$k
 	+box
 	border: 2px solid #3c3c3c
 	&:after
 		content: ""
 		position: absolute
-		top: 10px * .75
-		right: 9px * .75
+		top: 10px*$k
+		right: 9px*$k
 		+s(arr-select) 
 		z-index: 1000
 .select__text
 	position: relative 
 	display: block
-	padding-left: 13px * .75
+	padding-left: 13px*$k
 	width: 85%
-	height: 28px * .75
+	height: 28px*$k 
 	white-space: nowrap
 	text-overflow: ellipsis 
 	cursor: pointer
 	+box
 	color: #3c3c3c
-	font-size: 11px * .75
-	line-height: 28px * .75
+	font-size: 11px*$k
+	line-height: 28px*$k
 	
 .select__list
 	display: none
 	position: absolute
-	top: 32px * .75
-	left: -2px
-	right: -2px 
+	top: 32px*$k
+	left: -2px*$k
+	right: -2px*$k 
 	+box
 	border: 2px solid #3c3c3c
 	li
-		height: 30px * .75
+		height: 30px*$k
 		+box
 		border-top: 2px solid #3c3c3c
-		font-size: 11px * .75
-		line-height: 30px * .75
-		padding: 0 13px * .75
+		font-size: 11px*$k
+		line-height: 30px*$k
+		padding: 0 13px*$k
 		white-space: nowrap
 		text-overflow: ellipsis 
 		&:first-child
@@ -650,18 +647,18 @@ $hf: 411px
 	display: block
 	width: 100%
 	+box
-	height: 30px * .75
-	padding: 0 13px * .75
-	font-size: 11px * .75
+	height: 30px*$k 
+	padding: 0 13px*$k 
+	font-size: 11px*$k
 	border: 2px solid #3c3c3c
-.input_digi
+.input_digit
 	display: inline-block
-	width: 60px * .75
+	width: 60px*$k 
 	text-align: right
 	vertical-align: middle
 .btn-add
 	display: inline-block
-	margin-left: 6px * .75
+	margin-left: 6px*$k
 	vertical-align: middle
 	+s(plus)
 

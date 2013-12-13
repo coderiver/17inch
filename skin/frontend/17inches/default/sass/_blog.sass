@@ -1,44 +1,44 @@
 .blog
-	padding-top: 55px
+	padding-top: 55px*$k
 	+clr
 .blog__item
 	float: left
 .blog__item_width-4
-	width: 1080px
+	width: 1080px*$k
 	.blog__content
-		width: 540px 
+		width: 540px*$k 
 .blog__item_width-2
-	width: 540px
+	width: 540px*$k
 	.blog__content
-		width: 270px 
+		width: 270px*$k 
 .blog__item_height-1
-	height: 270px
+	height: 270px*$k
 	.blog__content
-		height: 270px 
+		height: 270px*$k 
 .blog__item_height-2
-	height: 540px
+	height: 540px*$k
 	.blog__content
-		height: 540px 
+		height: 540px*$k 
 .blog__column
 	float: left
 	width: 50%
 .blog__content
 	display: table-cell
-	padding: 35px
+	padding: 35px*$k
 	background: $gr 
 	vertical-align: middle
 	+box
 	text-align: center
 .blog__title
 	position: relative
-	padding-bottom: 30px 
-	font-size: 20px
+	padding-bottom: 30px*$k 
+	font-size: 20px*$k
 	&:after
 		content: ""
 		position: absolute
-		bottom: 15px
+		bottom: 15px*$k
 		left: 50%
-		margin-left: -15px
+		margin-left: -15px*$k
 		+s(blog-title) 
 .blog__content_black-right, .blog__content_black-left
 	position: relative
@@ -47,8 +47,8 @@
 		content: ""
 		position: absolute
 		top: 50%
-		right: -45px
-		margin-top: -45px
+		right: -45px*$k
+		margin-top: -45px*$k
 		+arr(45,90,#373737,r)
 	.blog__text, .blog__title 
 		color: #fff
@@ -58,8 +58,8 @@
 .blog__content_black-left
 	&:after
 		right: auto
-		left: -45px
-		margin-top: -45px
+		left: -45px*$k
+		margin-top: -45px*$k
 		+arr(45,90,#373737,l)
 .blog__content_white-right, .blog__content_white-left
 	position: relative
@@ -68,8 +68,8 @@
 		content: ""
 		position: absolute
 		top: 50%
-		right: -45px
-		margin-top: -45px
+		right: -45px*$k
+		margin-top: -45px*$k
 		+arr(45,90,#fff,r)
 .blog__content_white-left
 	&:after
@@ -77,6 +77,6 @@
 		position: absolute
 		top: 50%
 		right: auto
-		left: -45px
-		margin-top: -45px
+		left: -45px*$k
+		margin-top: -45px*$k
 		+arr(45,90,#fff,l)
