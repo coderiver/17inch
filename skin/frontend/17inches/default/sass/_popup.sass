@@ -9,117 +9,117 @@
 	background: $brown 
 .popup
 	position: absolute
-	width: 1080px
-	top: 100px
+	width: 1080px*$k
+	top: 100px*$k
 	left: 50%
 	z-index: 10000
-	padding: 43px 0 70px
-	margin-left: -540px
+	padding: 43px*$k 0 70px*$k
+	margin-left: -540px*$k
 	background: #fff
 	.gallery
-		padding-left: 50px
-		width: 600px
+		padding-left: 50px*$k
+		width: 600px*$k
 		+box 
 	.item-info
-		padding-right: 10px
+		padding-right: 10px*$k
 	.gallery__prev,
 	.gallery__next
 		position: absolute
 		top: 50%
-		margin-top: -76px
+		margin-top: -76px*$k
 	.gallery__prev
-		left: -120px
+		left: -120px*$k
 		+s(m-slider-prev)
 	.gallery__next
-		right: -120px
+		right: -120px*$k
 		+s(m-slider-next)
 .popup__close
 	position: absolute
-	top: 9px
-	right: 9px
+	top: 9px*$k
+	right: 9px*$k
 	+s(close)
 .popup__link
 	position: absolute
-	right: 10px
-	bottom: 15px  
-	font-size: 12px
+	right: 10px*$k
+	bottom: 15px*$k  
+	font-size: 12px*$k
 	text-decoration: underline
 	
 .popup_small
-	margin-left: -410px
-	padding: 0 40px 50px 60px 
-	width: 820px
+	margin-left: -410px*$k
+	padding: 0 40px*$k 50px*$k 60px*$k 
+	width: 820px*$k
 	+box
 	background: url(../img/popup-bg.png) 0 0 no-repeat
 	+background-size(100%,100%) 
 	.input-big
-		padding: 0 20px 
-		width: 300px
-		height: 60px
+		padding: 0 20px*$k 
+		width: 300px*$k
+		height: 60px*$k
 		background: #fff
-		font-size: 14px 
+		font-size: 14px*$k 
 		+box
 	.input-wrap
-		margin-bottom: 13px
+		margin-bottom: 13px*$k
 	.input-wrap_fb
-		margin-bottom: 6px
+		margin-bottom: 6px*$k
 	a
 		display: inline-block
-		margin-left: 20px
-		font-size: 11px
+		margin-left: 20px*$k
+		font-size: 11px*$k
 		text-decoration: underline
 		
 .popup__title
-	margin-bottom: 19px
-	font-size: 25px
+	margin-bottom: 19px*$k
+	font-size: 25px*$k
 
 .popup__top
-	padding-top: 54px
+	padding-top: 54px*$k
 	text-align: center
 	p
-		font-size: 12px
+		font-size: 12px*$k
 		color: #373737 
 		line-height: 1.2
 .popup__logo
 	display: inline-block
-	margin-bottom: 50px
+	margin-bottom: 50px*$k
 	+s(logo-popup)
 .popup__logo_mod
-	margin-bottom: 10px
+	margin-bottom: 10px*$k
 .btn-submit
 	position: relative
 	display: block
-	padding-left: 30px
-	width: 300px
-	+box
-	height: 70px
-	line-height: 70px  
+	padding-left: 30px*$k
+	width: 300px*$k
+	+box 
+	height: 70px*$k
+	line-height: 70px*$k  
 	text-align: left
 	background: #e2bc90 
 	&:after
 		content: ""
 		position: absolute
-		margin-top: -7px
+		margin-top: -7px*$k
 		top: 50%
-		right: 30px
+		right: 30px*$k
 		+s(arr1) 
 
 .input-wrap_fb
 	.btn-submit,
-	span
+	span  
 		vertical-align: middle
 		display: inline-block
 	span
-		font-size: 11px
+		font-size: 11px*$k
 	.btn-fb
-		margin-left: 37px
+		margin-left: 37px*$k
 	.btn-submit
-		margin-right: 37px
+		margin-right: 37px*$k
 .btn-fb
 	position: relative
-	width: 300px
-	height: 70px
-	line-height: 70px
+	width: 300px*$k
+	height: 70px*$k
+	line-height: 70px*$k
 	text-align: left
 	+box
 	display: inline-block
@@ -129,73 +129,73 @@
 		display: inline-block
 		vertical-align: middle
 	i
-		margin: 0 45px 0 30px 
+		margin: 0 45px*$k 0 30px*$k 
 		+s(btn-fb)
 	span
-		font-size: 14px
+		font-size: 14px*$k
 		color: #fff 
 		margin: 0
 
 .popup__email
-	font-size: 10px
+	font-size: 10px*$k
 	.input-wrap
 		position: relative
-		width: 300px
-		margin: 50px auto 0 
+		width: 300px*$k
+		margin: 50px*$k auto 0 
 		.btn-submit
 			padding: 0
 			text-align: center
-			width: 100px
+			width: 100px*$k
 			position: absolute
 			right: 0
 			top: 0
-			height: 60px
-			line-height: 60px
+			height: 60px*$k
+			line-height: 60px*$k
 			&:after
 				display: none
 	a
 		margin-left: 0 
 	.btn-fb
-		margin: 34px 0 10px
-		height: 60px
-		line-height: 60px
+		margin: 34px*$k 0 10px*$k
+		height: 60px*$k
+		line-height: 60px*$k
 		
 .popup-cart
-	padding: 55px 60px 
+	padding: 55px*$k 60px*$k 
 .popup-cart__img
 	float: left
-	margin-right: 20px
+	margin-right: 20px*$k
 .popup-cart__main
-	padding-top: 50px
+	padding-top: 50px*$k
 	overflow: hidden
 	.popup-cart__title1
 		text-align: left
 .popup-cart__title1
 	margin-bottom: 2px
-	font-size: 25px
+	font-size: 25px*$k
 	text-align: center
 .popup-cart__title2
-	margin-bottom: 7px
-	font-size: 20px
+	margin-bottom: 7px*$k
+	font-size: 20px*$k
 .popup-cart__meta
-	font-size: 12px
+	font-size: 12px*$k
 .popup-cart__body
-	margin-bottom: 45px
+	margin-bottom: 45px*$k
 	+clr
 .popup-cart__action
-	margin-top: 44px
+	margin-top: 44px*$k
 	+clr
 	.to-basket
 		float: left
-		width: 300px
+		width: 300px*$k
 		text-align: left
 		text-decoration: none
-		font-size: 14px
+		font-size: 14px*$k
 	.btn-submit
 		text-decoration: none
 		float: right
 		background: #dfe6d4 
-		font-size: 14px
+		font-size: 14px*$k
 		+transition(background .2s linear)
 		&:hover
 			background: #e1e1e1 
