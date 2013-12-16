@@ -1,4 +1,6 @@
 @import "base"
+.checkout-wrap
+	margin-bottom: 134px
 .l-col-3
 	float: left
 	padding-left: 16px
@@ -50,24 +52,67 @@
 
 .step
 	position: relative
+	margin: 44px 0 60px
 	height: 40px
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		margin-top: -4px
+		left: 0
+		right: 0
+		height: 8px
+		z-index: 1
+		border-radius: 20px  
+		background: #f5f5f5
+		box-shadow: inset 2px 1px 2px #ebebeb
+		 
 .step__count
 	position: absolute
 	width: 40px
 	height: 40px
+	z-index: 2
 	text-align: center
 	line-height: 40px
-	font-size: 18px
+	font-size: 0
 	border-radius: 50%
 	background: #f5f5f5
 	text-shadow: 1px 1px 1px #fff
 	box-shadow: inset 2px 1px 2px #ebebeb   
+	i
+		display: inline-block
+		vertical-align: middle
+		width: 34px
+		font-size: 18px
+		height: 34px
+		line-height: 34px
+		border-radius: 50%
+		font-style: normal
+		background: #dbe2d0
+	span
+		position: absolute
+		top: 37px
+		width: 100px
+		text-align: left
+		font-size: 12px
+
 .step__1
 	left: 0
-	margin-left: -20px
+	span
+		left: 0
 .step__2
 	left: 50%
 	margin-left: -20px 
+	span
+		left: 50%
+		margin-left: -50px
+		text-align: center
 .step__3
 	right: 0
-	margin-right: -20px
+	span
+		right: 0
+		text-align: right
+.list_block
+	li
+		float: none
+		width: 100%
