@@ -21,6 +21,7 @@
 		bottom: 0
 		left: 16px
 .checkout
+	margin-bottom: 40px
 	.list
 		margin-bottom: 27px
 		font-size: 10px
@@ -71,7 +72,7 @@
 	position: absolute
 	width: 40px
 	height: 40px
-	z-index: 2
+	z-index: 4
 	text-align: center
 	line-height: 40px
 	font-size: 0
@@ -95,13 +96,24 @@
 		width: 100px
 		text-align: left
 		font-size: 12px
-
+	&.is-active
+		&:after
+			content: ""
+			position: absolute
+			left: 35px
+			z-index: -1
+			top: 50%
+			margin-top: -2px
+			width: 360px
+			height: 4px
+			background: #dbe2d0 
 .step__1
 	left: 0
 	span
 		left: 0
 .step__2
 	left: 50%
+	z-index: 2
 	margin-left: -20px 
 	span
 		left: 50%
@@ -109,6 +121,7 @@
 		text-align: center
 .step__3
 	right: 0
+	z-index: 3
 	span
 		right: 0
 		text-align: right
@@ -116,3 +129,125 @@
 	li
 		float: none
 		width: 100%
+		
+
+.l-col-1
+	float: left
+	width: 450px
+	+box
+.l-col-2
+	float: right
+	width: 340px
+	+box
+
+.field_width
+	margin-bottom: 13px
+	font-size: 0
+	.field__text
+		display: inline-block
+		vertical-align: middle
+		padding-right: 5px
+		width: 130px  
+		min-height: 1px
+	.field__main
+		display: inline-block
+		vertical-align: middle
+		width: 315px
+	.select_light
+		width: 145px
+	.input-big
+		height: 37px
+		border-width: 2px
+	.select_date
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+		width: 82px
+.select_light
+	border-color: #f9f9f9
+.view-basket
+	padding: 25px
+	background: #ececec  
+	.to-basket
+		display: block
+		margin: 0 auto 10px
+		width: 240px
+		text-align: left
+	.to-center
+		a
+			text-decoration: underline
+		.to-basket
+			text-decoration: none
+	.checkbox__text
+		font-size: 9px
+	.checkbox
+		margin-bottom: 27px
+.checkout_basket
+	.checkout__title
+		margin-bottom: 0
+
+.basket-item
+	padding: 13px 0 16px 
+	+clr
+	margin-bottom: -2px
+	border-top: 2px solid #f1f1f1 
+	border-bottom: 2px solid #f1f1f1 
+.basket-item__img
+	float: left
+	margin-right: 15px
+.basket-item__main
+	position: relative  
+	overflow: hidden
+	padding-right: 40px
+.basket-item__price
+	position: absolute
+	bottom: 0
+	right: 0
+.basket-item__param
+	display: inline-block
+	margin-right: 10px
+.table-list
+	margin-bottom: 70px
+	padding: 18px 0 7px
+	border-bottom: 1px solid #e6e6e6 
+.table-list__item
+	margin-bottom: 7px
+	+clr
+	font-size: 10px
+	strong
+		+fm
+		font-weight: normal
+.table-list__key
+	float: left
+	width: 50%
+.table-list__value
+	float: right
+	width: 50%
+	text-align: right
+.table-list__item_summa
+	.table-list__key,
+	.table-list__value,
+		+fm
+		span
+			+f
+	.table-list__value,
+		color: #e9af6e 
+
+.list-col
+	float: left
+	margin-bottom: 70px
+	padding-right: 10px
+	width: 50%
+	+box
+	font-size: 10px
+	strong
+		font-size: 11px
+		+fm
+		font-weight: normal
+.list-col__item
+	margin-bottom: 5px
+	.icon-pay-ec
+		float: none
+		display: inline-block
+		margin-left: 5px
+		vertical-align: middle

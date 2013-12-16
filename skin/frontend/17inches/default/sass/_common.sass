@@ -72,7 +72,6 @@ $hf: 525px*$k
 		top: -30px*$k
 		left: 0
 		right: 0
-		z-index: 2000
 	.header
 		background: rgba(59, 59, 59, .95) 
 .push
@@ -86,7 +85,9 @@ $hf: 525px*$k
 //top
 //top
 .top
+	position: relative
 	height: 120px
+	z-index: 2000
 	background: #EBEBEB 
 .top__banner
 	.l-container
@@ -663,3 +664,73 @@ $hf: 525px*$k
 	vertical-align: middle
 	+s(plus)
 
+.checkbox
+	position: relative
+	display: inline-block
+	input
+		position: absolute
+		left: 0
+		top: -3px
+		width: 20px
+		height: 20px
+		opacity: 0
+		&:checked
+			+ span
+				&:before
+					content: ""
+					position: absolute
+					left: 5px
+					top: 5px  
+					+s(arr-select)
+					z-index: 3
+	a
+		text-decoration: underline
+.checkbox__text
+	position: relative
+	display: inline-block
+	font-size: 10px
+	padding-left: 35px
+	color: #3d4361 
+	z-index: 2
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		top: -3px
+		width: 18px
+		height: 18px
+		border: 1px solid #ededed
+		background: #fff
+.checkbox__info
+	display: block
+	margin-top: 9px
+	color: #c4c4c4
+	font-size: 8px 
+.checkbox-inline
+	display: inline-block
+	vertical-align: top
+	margin: 0 0 23px 9px
+	width: 210px
+.checkbox_pay 
+	font-size: 12px
+	+clr
+	.icon-pay-pal,
+	.icon-pay-ec
+		margin-right: 40px
+
+.icon-pay-pal,
+.icon-pay-sofort,
+.icon-pay-ec,
+.icon-pay-visa,
+.icon-pay-mc
+	float: right
+.icon-pay-pal
+	+s(pay-sys-paypal)
+.icon-pay-sofort
+	+s(pay-sys-sofort)
+.icon-pay-ec
+	+s(pay-sys-ec)
+.icon-pay-visa 
+	+s(pay-sys-visa)
+.icon-pay-mc
+	+s(pay-sys-mc)
