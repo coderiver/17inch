@@ -64,8 +64,8 @@
 	a
 		position: relative
 		display: block
-		width: 70px*$k
-		height: 70px*$k
+		width: floor(70px*$k)
+		height: floor(70px*$k)
 		margin-bottom: 1px
 		box-shadow: 0 0 0 1px*$k #fff
 		&:hover
@@ -102,7 +102,7 @@
 .item-info__share
 	float: right
 .item-info__price
-	margin-top: 16px*$k
+	margin-top: 14px*$k
 	font-size: 48px*$k
 .item-info__price-meta
 	margin-bottom: 23px*$k
@@ -117,7 +117,7 @@
 .item-info__action
 	margin-bottom: 24px*$k
 .to-basket
-	position: relative
+	position: relative  
 	display: block
 	padding-left: 27px*$k
 	height: 70px*$k
@@ -182,7 +182,7 @@
 		+s(basket-delivery) 
 
 .share-now
-	margin-bottom: 30px*$k
+	margin-bottom: floor(27px*$k)
 	text-align: center
 	span
 		display: block
