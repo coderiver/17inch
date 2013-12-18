@@ -1,0 +1,91 @@
+.blog
+	padding-top: 55px*$k
+	+clr
+.blog__item
+	float: left
+.blog__item_width-4
+	width: 1080px*$k
+	.blog__content
+		width: 540px*$k 
+.blog__item_width-2
+	width: 540px*$k
+	.blog__content
+		width: 270px*$k 
+.blog__item_height-1
+	height: floor(270px*$k)
+	.blog__content
+		height: 270px*$k 
+		line-height: 150px
+.blog__item_height-2
+	height: 540px*$k
+	.blog__content
+		height: 540px*$k 
+		line-height: 355px
+.blog__column
+	//position: relative
+	float: left 
+	width: 50%
+.blog__content
+	//display: table-cell
+	position: relative
+	padding: 35px*$k
+	background: $gr 
+	vertical-align: middle
+	+box
+	text-align: center
+.blog__title
+	position: relative
+	padding-bottom: 30px*$k 
+	font-size: 20px*$k
+	&:after
+		content: ""
+		position: absolute
+		bottom: 15px*$k
+		left: 50%
+		z-index: 10
+		margin-left: -15px*$k
+		+s(blog-title) 
+.blog__content_black-right, .blog__content_black-left
+	//position: relative
+	background: #373737
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: floor(-44px*$k)
+		margin-top: floor(-44px*$k)
+		+arr(44*$k,90*$k,#373737,r)
+	.blog__text, .blog__title 
+		color: #fff
+	.blog__title
+		&:after
+			+s(blog-title-white)
+.blog__content_black-left
+	&:after
+		right: auto
+		left: -44px*$k
+		margin-top: -44px*$k
+		+arr(44*$k,90*$k,#373737,l)
+.blog__content_white-right, .blog__content_white-left
+	position: relative
+	background: #fff
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: -44px*$k
+		margin-top: -44px*$k
+		+arr(44*$k,90*$k,#fff,r)
+.blog__content_white-left
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: auto
+		left: -44px*$k
+		margin-top: -44px*$k
+		+arr(44*$k,90*$k,#fff,l)
+.blog__wrap
+	line-height: 1
+	display: inline-block
+	vertical-align: middle

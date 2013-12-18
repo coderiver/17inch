@@ -4,8 +4,15 @@
 $c: #f1cda4
 $gr: #dfe6d4
 $brown: #605b5b
-
-//fonts
+$orange: #e2bc90
+$k: 0.75 // it's so stupid and i hate this, but i have to scale all sizes on the site to 75%
+//fonts 
+@font-face 
+	font-family: 'gotham_narrowmedium'
+	src: url('../fonts/gothamnarrow-medium-webfont.eot')
+	src: url('../fonts/gothamnarrow-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gothamnarrow-medium-webfont.woff') format('woff'), url('../fonts/gothamnarrow-medium-webfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
 @font-face
 	font-family: 'Gotham-Medium'
 	src: url('../fonts/Gotham-Medium.eot')
@@ -18,12 +25,21 @@ $brown: #605b5b
 	font-family: 'Gotham-Book'
 	src: url('../fonts/Gotham-Book.eot')
 	src: url('../fonts/Gotham-Book.eot') format('embedded-opentype'), url('../fonts/Gotham-Book.woff') format('woff')
+@font-face
+	font-family: 'Gotham-Narrow'
+	src: url('../fonts/Gotham-Narrow.eot')
+	src: url('../fonts/Gotham-Narrow.eot') format('embedded-opentype'), url('../fonts/Gotham-Narrow.woff') format('woff')
+	
 @mixin f
+	font-family: 'gotham_narrowmedium', Arial, Tahoma, sans-serif 
+@mixin fm
 	font-family: 'Gotham-Medium', Arial, Tahoma, sans-serif 
 @mixin fl
 	font-family: 'Gotham-XLightItalic', Arial, Tahoma, sans-serif 
 @mixin fboo
 	font-family: 'Gotham-Book', Arial, Tahoma, sans-serif 
+@mixin fn
+	font-family: 'Gotham-Narrow', Arial, Tahoma, sans-serif 
 
 //sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px)
@@ -39,7 +55,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 $svg: "svg/"
 @mixin svg($name, $width, $height)
 	width: $width + px
-	height: $height + px
+	height: $height + px   
 	background-image: inline-image($svg + $name + ".svg")
 	-webkit-background-size: 100% 100%
 	background-size: 100% 100%	
@@ -128,14 +144,14 @@ $svg: "svg/"
 	-moz-box-sizing: border-box
 	box-sizing: border-box
 //custom mix
-@mixin bsize
+@mixin cover
 	background-repeat: no-repeat
 	background-size: cover 
 	background-position: 50% 50%
 //media query
 @mixin rt($media)
-	@if $media == 1920
-		@media only screen and (max-width: 1920px)
+	@if $media == 1345
+		@media only screen and (max-width: 1345px)
 			@content
 	@else if $media == 1600
 		@media only screen and (max-width: 1600px)
