@@ -1,26 +1,32 @@
-document.observe('dom:loaded', function(){
-
-  //header fixed
-  Event.observe(window, "scroll", function() {
-    var value = $$('html')[0].scrollTop;
-    if (value > 23)
-      $$('.wrap')[0].addClassName('wrap_top-fixed');
-    else
-      $$('.wrap')[0].removeClassName('wrap_top-fixed');
-  });
-
-  //sliders
-  var sliders = $$('.js-prototype-slider');
-  for(var i=0; i<sliders.length; i++){
-    //alert(sliders[i]);
-	  new Carousel(sliders[i].down('.slider-main'), sliders[i].down('.slider').select('.slider__item'), sliders[i].select('a'), {
-	    duration: 0.5,
-	    wheel: false,
-	    visibleSlides: 5,
-	    circular: true
-	  });
+var $j = jQuery.noConflict();	
+$j(document).ready(function(){
+  function slider() {
+  	var slider = $j('.js-slider');
+  	if (slider.length > 0) {
+  		slider.each(function(){
+  			el_next = $j(this).find('.slider__nav_next');
+  			el_prev = $j(this).find('.slider__nav_prev');
+  			el_item = $j(this).find('.slider__item');
+  			el_in = $j(this).find('.slider');
+  			el_in.cycle({
+  				fx: 'carousel',
+  			  timeout: 0,
+  			  prev: el_prev,
+  			  next: el_next,
+  			  slides: el_item
+  			});
+  		})
+  	};		  	
   }
-
-});
-
+  slider();
+  $j(window).scroll(function(){
+	  var value = $j(window).scrollTop();
+	  if (value > 23) {
+	  	$j('.wrap').addClass('wrap_top-fixed');
+	  }
+	  else{
+	    $j('.wrap').removeClass('wrap_top-fixed');
+	  }
+  });
+});		
 

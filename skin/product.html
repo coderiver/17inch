@@ -3,13 +3,14 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Product</title>
+	<title>index</title>
 	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/screen.css" >
 	<script src="../js/prototype/prototype.js"></script>
-	<script src="../js/scriptaculous/scriptaculous.js"></script>
-	<script src="../js/carousel.js"></script>
+	<script src="../js/jquery-2.0.2.min.js"></script>
+	<script src="../js/jquery.cycle2.min.js"></script>
+	<script src="../js/jquery.cycle2.carousel.min.js"></script>
 	<script src="frontend/17inches/default/js/html5shiv.js"></script>
-<script src="frontend/17inches/default/js/common.js"></script>
+	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN .wrap -->
@@ -227,102 +228,166 @@
 			</div>	
 		</div>
 		<h2 class="title">Auch Verfügbar als</h2>
-		<div class="slider-wrap">
-			<div class="slider-main  js-prototype-slider">
+		<div class="slider-wrap">			
+			<div class="slider-main js-slider">
+				<button class="slider__nav slider__nav_prev"></button>
+				<button class="slider__nav slider__nav_next"></button>
 				<div class="slider">
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    </div>
-			</div>
-		    <a href="javascript:" class="slider-nav slider-nav_prev" rel="prev"></a>
-		    <a href="javascript:" class="slider-nav slider-nav_next" rel="next"></a>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>		    	
+		    </div>
+			</div>		 
 		</div>
 		<h2 class="title">Zuletzt angesehen</h2>
-		<div class="slider-wrap">
-			<div class="slider-main  js-prototype-slider">
+		<div class="slider-wrap">			
+			<div class="slider-main js-slider">
+				<button class="slider__nav slider__nav_prev"></button>
+				<button class="slider__nav slider__nav_next"></button>
 				<div class="slider">
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    	<div class="slider__item">
-			    		<img src="http://lorempixel.com/210/322/" alt="" width="210" height="322">
-			    		<div class="slider__info"> <strong>Lorem ipsum</strong> <span>dolor dolor sit amet</span> <strong>44,86€</strong></div>
-			    	</div>
-			    </div>
-			</div>
-		    <a href="javascript:" class="slider-nav slider-nav_prev" rel="prev"></a>
-		    <a href="javascript:" class="slider-nav slider-nav_next" rel="next"></a>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>
+		    	<div class="slider__item">
+		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
+		    		<div class="slider__info">
+		    			<strong>Lorem ipsum</strong>
+		    			<span>dolor dolor sit amet</span>
+		    			<strong>44,86€</strong>
+		    		</div>
+		    	</div>		    	
+		    </div>
+			</div>		 
 		</div>
 		<div class="soc">
 			<a href="#" class="soc__link soc__in"><i></i></a>

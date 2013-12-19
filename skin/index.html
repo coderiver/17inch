@@ -6,10 +6,11 @@
 	<title>index</title>
 	<link rel="stylesheet" media="screen" href="frontend/17inches/default/css/screen.css" >
 	<script src="../js/prototype/prototype.js"></script>
-	<script src="../js/scriptaculous/scriptaculous.js"></script>
-	<script src="../js/carousel.js"></script>
+	<script src="../js/jquery-2.0.2.min.js"></script>
+	<script src="../js/jquery.cycle2.min.js"></script>
+	<script src="../js/jquery.cycle2.carousel.min.js"></script>
 	<script src="frontend/17inches/default/js/html5shiv.js"></script>
-<script src="frontend/17inches/default/js/common.js"></script>
+	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN .wrap -->
@@ -113,7 +114,28 @@
 			<button class="m-slider__prev"></button>
 			<button class="m-slider__next"></button>
 			<div class="m-slider__arr"></div>
-			<div class="m-slider__items">
+			<div class="m-slider__items cycle-slideshow" 
+	    data-cycle-fx="scrollHorz" 
+	    data-cycle-timeout="0"
+	    data-cycle-prev=".m-slider__prev"
+	    data-cycle-next=".m-slider__next"
+	    data-cycle-slides=".m-slider__el">
+				<div class="m-slider__el" style="background-image: url(http://placehold.it/1350x491)">
+					<div class="l-container">
+						<div class="m-slider__middle">
+							<div class="m-slider__title">HEADLINE</div>
+							<div class="m-slider__title-sub">SUBLINE Lorem ipsum</div>
+						</div>
+					</div>
+				</div>
+				<div class="m-slider__el" style="background-image: url(http://placehold.it/1350x491)">
+					<div class="l-container">
+						<div class="m-slider__middle">
+							<div class="m-slider__title">HEADLINE</div>
+							<div class="m-slider__title-sub">SUBLINE Lorem ipsum</div>
+						</div>
+					</div>
+				</div>
 				<div class="m-slider__el" style="background-image: url(http://placehold.it/1350x491)">
 					<div class="l-container">
 						<div class="m-slider__middle">
@@ -153,10 +175,10 @@
 	</div>
 	<div class="l-container">
 		<h2 class="title">WAS GEHT AB</h2>
-		<div class="slider-wrap js-prototype-slider">
-			<a href="javascript:" class="slider-nav carousel-control slider-nav_prev" rel="prev"></a>
-		  <a href="javascript:" class="slider-nav carousel-control slider-nav_next" rel="next"></a>
-			<div class="slider-main">
+		<div class="slider-wrap">			
+			<div class="slider-main js-slider">
+				<button class="slider__nav slider__nav_prev"></button>
+				<button class="slider__nav slider__nav_next"></button>
 				<div class="slider">
 		    	<div class="slider__item">
 		    		<img src="http://lorempixel.com/157/241/" alt="" width="157" height="241">
@@ -229,7 +251,7 @@
 		    			<span>dolor dolor sit amet</span>
 		    			<strong>44,86€</strong>
 		    		</div>
-		    	</div>
+		    	</div>		    	
 		    </div>
 			</div>		 
 		</div>		
