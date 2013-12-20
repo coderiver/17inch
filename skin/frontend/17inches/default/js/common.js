@@ -28,5 +28,15 @@ $j(document).ready(function(){
 	    $j('.wrap').removeClass('wrap_top-fixed');
 	  }
   });
+  $j(window).scroll(function(){
+    var value = $j(window).scrollTop() + $j(".top").outerHeight();
+    var top = $j(".js-filter").offset().top;
+    if (value >= top) {
+      $j('.filter').addClass('is-fixed');
+    }
+    else{
+      $j('.filter').removeClass('is-fixed');
+    }
+  });
 });		
 
