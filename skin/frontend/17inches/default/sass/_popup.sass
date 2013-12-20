@@ -95,6 +95,7 @@
 	line-height: 70px*$k  
 	text-align: left
 	background: #e2bc90 
+	+transition(background .2s linear)
 	&:after
 		content: ""
 		position: absolute
@@ -102,6 +103,8 @@
 		top: 50%
 		right: 30px*$k
 		+s(arr1) 
+	&:hover
+		background: #e9af6e 
 
 .input-wrap_fb
 	.btn-submit,

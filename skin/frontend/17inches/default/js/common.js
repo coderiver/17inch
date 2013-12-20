@@ -29,10 +29,12 @@ $j(document).ready(function(){
 	  }
   });
   $j(window).scroll(function(){
-    var value = $j(window).scrollTop() + $j(".top").outerHeight();
+    var height = $j(".top").outerHeight();
+    var value = $j(window).scrollTop() + height;
     var top = $j(".js-filter").offset().top;
     if (value >= top) {
       $j('.filter').addClass('is-fixed');
+      $j('.filter').css('top',height-23);
     }
     else{
       $j('.filter').removeClass('is-fixed');
