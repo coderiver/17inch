@@ -41,6 +41,15 @@ table
 	border-spacing: 0
 	border-collapse: collapse
 	width: 100%
+html
+	+scrollbar
+		width: 10px
+	+scrollbar-track
+		background: #bec3c3
+	+scrollbar-thumb
+		background: #bec3c3
+	+scrollbar-track-piece 
+		background: #e1e1e1
 body
 	+f  
 	min-width: 960px  
@@ -282,11 +291,11 @@ $hf: 525px*$k
 	background: #eee 
 	text-transform: none
 .nav__list
+	position: relative
 	font-size: 0 
 	text-align: center
 	+fm  
 	> li  
-		position: relative
 		display: inline-block
 		vertical-align: top
 		&:hover, &.is-active
@@ -301,34 +310,37 @@ $hf: 525px*$k
 			line-height: 30px
 			font-size: 16px
 			text-transform: none
-.nav__sub	
-	display: none
+.nav__sub	  
+	//display: none
 	position: absolute
 	top: 100%
-	left: 0 
+	left: 28px
+	right: 28px
 	text-align: left	
 	text-transform: uppercase
 	z-index: 500 
-.nav__sub-in
+.nav__sub-in  
 	position: relative
-	padding: 45px 65px 65px 45px	
+	padding: 45px 65px 65px 21px	
 	white-space: nowrap
 	z-index: 10 
 .nav__sub-list-bg
 	position: absolute
 	top: 0
 	right: 0
-	bottom: 0
+	bottom: 15px
 	width: 7px
 	background: url(../img/icons/wave-vert.png) repeat-y  
 .nav__sub-list
 	position: relative
 	display: inline-block
-	width: 120px
-	padding-right: 20px
+	padding-right: 30px
 	margin-right: 50px
 	vertical-align: top
 	white-space: normal
+	max-height: 400px
+	-ms-overflow-y: auto
+	overflow-y: auto
 	ul
 		margin-bottom: 23px
 	li
@@ -338,8 +350,9 @@ $hf: 525px*$k
 		color: #595957 		
 .nav__sub-title
 	margin-bottom: 20px
-	font-size: 20px	
+	font-size: 14px	
 	line-height: 1
+	color: #000 
 .nav__sub-bg, .nav__sub-arr
 	position: absolute
 	left: 0
@@ -358,15 +371,16 @@ $hf: 525px*$k
 .nav__sub-el
 	display: inline-block
 	vertical-align: top
+	white-space: normal
 .nav__sub-el-item
 	display: inline-block
 	width: 140px
-	margin-left: 15px 
+	margin: 0 0 15px 15px 
 	vertical-align: top
 	text-align: center
 	white-space: normal
 	&:first-child
-		margin: 0
+		margin: 0 0 15px
 	& > a
 		position: relative
 		display: block
@@ -382,6 +396,9 @@ $hf: 525px*$k
 			height: 7px
 			margin-left: -26px 
 			background: url(../img/icons/wave-hor.png) repeat-x 
+	img
+		max-width: 100%
+		height: auto
 .nav__sub-el-pic
 	img
 		display: block
