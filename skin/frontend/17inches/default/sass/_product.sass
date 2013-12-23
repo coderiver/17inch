@@ -306,27 +306,29 @@
 		box-shadow: 0 0 6px*$k rgba(0,0,0,.4)
 		.item__info
 			display: none
-		&:before,
-		&:after
-			content: "" 
-			position: absolute
-		&:before
-			right: -1px*$k
-			top: -1px*$k
-			width: 0px*$k
-			height: 0px*$k
-			border-style: solid
-			border-width: 0 27px*$k 27px*$k 0
-			border-color: transparent #dfe6d4 transparent transparent
-		&:after
-			top: 0
-			right: 0
-			+s(item-corner)
+		.item__popup-link
+			display: block
 		img
 			width: 280px*$k
 			height: auto
 		.item__actions
 			display: block
+.item__popup-link
+	display: none
+	position: absolute
+	right: -1px
+	top: -1px
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 0 27px*$k 27px*$k 0
+	border-color: transparent #dfe6d4 transparent transparent
+	&:after
+		content: ""
+		position: absolute 
+		top: 1px
+		right: -19px
+		+s(item-corner)
 
 .item__info
 	padding-top: 13px*$k
@@ -367,6 +369,9 @@
 			position: absolute
 			right: 11px*$k
 			top: 9px*$k
+.item__actions-wrap
+	display: inline-block
+	vertical-align: middle
 
 .item__info-text
 	display: inline-block
@@ -429,15 +434,15 @@
 	height: 42px*$k
 	line-height: 42px*$k
 	text-align: center 
-	border: 4px solid #b7c0a9
+	background: #f1cda4
+	border: 4px solid #e9af6e
 	+transition(background .2s linear)
 	i
 		display: inline-block
 		vertical-align: middle
 		+s(h-cart-h)
 	&:hover
-		background: #f1cda4
-		border-color: #e9af6e 
+		background: #e9af6e
 .item__link
 	text-align: center
 	font-size: 10px*$k

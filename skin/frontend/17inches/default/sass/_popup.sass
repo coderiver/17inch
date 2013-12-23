@@ -1,5 +1,6 @@
 @import "base"
 .overlay
+	display: none
 	position: fixed
 	top: 0
 	right: 0
@@ -7,14 +8,20 @@
 	left: 0
 	z-index: 5000
 	background: $brown 
-.popup
-	position: absolute
-	width: 1080px*$k
-	top: 100px*$k
-	left: 50%
+.popup-wrap
+	display: none
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 70px 
 	z-index: 10000
+.popup
+	position: relative
+	width: 1080px*$k
 	padding: 43px*$k 0 70px*$k
-	margin-left: -540px*$k
+	margin: 0 auto
 	background: #fff
 	.gallery
 		padding-left: 50px*$k

@@ -75,12 +75,36 @@ $j(document).ready(function(){
               });
           });
       }
-      
+
       select();
       $j('.js-select').click(function(event){
           event.stopPropagation();
       })
 
+      $j(".js-item-blocks").hide();
+      $j(".js-basket-icon").click(function(){
+        $j(this).parent().find(".js-item-text").toggle();
+        $j(this).parent().find(".js-item-blocks").toggle();
+        return false;
+      });
 
+      $j(".js-popup-prod-link").click(function(){
+        $j(".js-popup-prod").show();
+        $j(".js-overlay").show();
+        return false;
+      });
+      $j(".popup__close").click(function(){
+        $j(this).parent().parent().hide();
+        $j(".js-overlay").hide();
+        return false; 
+      }); 
+      $j(".popup-wrap").click(function(){
+        $j(this).hide();
+        $j(".js-overlay").hide();
+        return false;  
+      }); 
+      $j('.popup').click(function(event){
+          event.stopPropagation();
+      })
 });		
 
