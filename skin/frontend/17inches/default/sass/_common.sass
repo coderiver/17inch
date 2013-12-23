@@ -404,6 +404,7 @@ $hf: 525px*$k
 	img
 		max-width: 100%
 		height: auto
+		max-height: 200px
 .nav__sub-el-pic
 	img
 		display: block
@@ -652,6 +653,17 @@ $hf: 525px*$k
 		right: 9px*$k
 		+s(arr-select) 
 		z-index: 1000
+.select_s
+	border-width: 1px
+	&:after
+		+s(arr-select-small)  
+		top: 12px*$k
+	.select__list
+		left: -1px
+		right: -1px
+		border-width: 1px 
+		li
+			border-width: 1px
 .select__text
 	position: relative 
 	display: block
@@ -669,11 +681,13 @@ $hf: 525px*$k
 .select__list
 	display: none
 	position: absolute
+	z-index: 100
 	top: 32px*$k
-	left: -2px*$k
-	right: -2px*$k 
+	left: -2px
+	right: -2px 
 	+box
 	border: 2px solid #3c3c3c
+	background: #fff 
 	li
 		height: 30px*$k
 		+box
@@ -681,6 +695,7 @@ $hf: 525px*$k
 		font-size: 11px*$k
 		line-height: 30px*$k
 		padding: 0 13px*$k
+		cursor: pointer
 		white-space: nowrap
 		text-overflow: ellipsis 
 		&:first-child
