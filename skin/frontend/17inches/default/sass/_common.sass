@@ -790,3 +790,74 @@ $hf: 525px*$k
 	+s(pay-sys-visa)
 .icon-pay-mc
 	+s(pay-sys-mc)
+
+.chosen-container
+	position: relative 
+	font-size: 10px
+.chosen-single
+	display: block
+	position: relative
+	padding: 0 25px*$k 0 13px*$k
+	height: 30px*$k
+	line-height: 28px*$k
+	+box
+	font-size: 11px*$k
+	cursor: pointer
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space: nowrap
+	border: 2px solid #3c3c3c
+	&:after
+		content: ""
+		position: absolute
+		top: 10px*$k
+		right: 9px*$k
+		+s(arr-select) 
+		z-index: 1000
+.chosen-search
+	display: none
+.chosen-with-drop
+	.chosen-drop
+		display: block
+.chosen-drop
+	position: absolute
+	left: 0
+	right: 0
+	top: 25px
+	display: none
+	z-index: 2000
+	+box
+	border: 2px solid #3c3c3c
+	background: #fff 
+	li
+		height: 30px*$k
+		+box
+		border-top: 2px solid #3c3c3c
+		font-size: 11px*$k
+		line-height: 28px*$k
+		padding: 0 13px*$k
+		cursor: pointer
+		white-space: nowrap
+		text-overflow: ellipsis 
+		overflow: hidden
+		&:first-child
+			border-top: 0
+			
+.chosen-rtl
+	.chosen-single
+		padding: 0 20px*$k 0 10px*$k
+		height: 28px*$k
+		line-height: 28px*$k
+		font-size: 10px*$k
+		border: 1px solid #3c3c3c
+		&:after
+			top: 10px*$k
+			right: 9px*$k
+			+s(arr-select-small) 
+	.chosen-drop
+		border-width: 1px
+		top: 22px
+		li
+			border-width: 1px
+			height: 28px*$k
+			line-height: 28px*$k

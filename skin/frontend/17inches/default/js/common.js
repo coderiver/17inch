@@ -31,7 +31,10 @@ $j(document).ready(function(){
   $j(window).scroll(function(){
     var height = $j(".top").outerHeight();
     var value = $j(window).scrollTop() + height;
-    var top = $j(".js-filter").offset().top;
+    if ($j(".js-filter").length > 0) {
+      var top = $j(".js-filter").offset().top;
+    }
+    
     if (value >= top) {
       $j('.filter').addClass('is-fixed');
       $j('.filter').css('top',height-23);
@@ -103,8 +106,16 @@ $j(document).ready(function(){
         $j(".js-overlay").hide();
         return false;  
       }); 
+
       $j('.popup').click(function(event){
           event.stopPropagation();
       })
+
+      $j(".js-chosen-select").chosen({
+        disable_search_threshold: 10,
+        width: "100%",
+        inherit_select_classes: true
+      });
+
 });		
 

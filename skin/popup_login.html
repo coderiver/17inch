@@ -9,6 +9,7 @@
 	<script src="../js/jquery-2.0.2.min.js"></script>
 	<script src="../js/jquery.cycle2.min.js"></script>
 	<script src="../js/jquery.cycle2.carousel.min.js"></script>
+	<script src="../js/chosen.js"></script>
 	<script src="frontend/17inches/default/js/html5shiv.js"></script>
 	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
@@ -409,29 +410,31 @@
 	</div>
 </footer>
 <!-- END .footer -->
-<div class="overlay"></div>
-<div class="popup popup_small">
-	<div class="popup__top">
-		<div class="popup__title">Lorem ipsum dolor sit</div>
-		<a href="#" class="popup__logo"></a>
+<div class="overlay js-overlay" style="display:block"></div>
+<div class="popup-wrap" style="display:block">
+	<div class="popup popup_small">
+		<div class="popup__top">
+			<div class="popup__title">Lorem ipsum dolor sit</div>
+			<a href="#" class="popup__logo"></a>
+		</div>
+		<div class="popup__login">
+			<div class="input-wrap">
+				<input type="text" class="input-big" placeholder="Benutzername">
+			</div>
+			<div class="input-wrap">
+				<input type="text" class="input-big" placeholder="Passwort">
+			</div>
+			<div class="input-wrap input-wrap_fb">
+				<button class="btn-submit">anmelden</button>
+				<span>oder</span>
+				<a class="btn-fb" href="#"><i></i><span>MIT FACEBOOK anmelden</span></a>
+			</div>
+			<div class="input-wrap">
+				<a href="#">Passwort oder Benutzername vergessen?</a>
+			</div>
+		</div>
+		<button class="popup__close"></button>
 	</div>
-	<div class="popup__login">
-		<div class="input-wrap">
-			<input type="text" class="input-big" placeholder="Benutzername">
-		</div>
-		<div class="input-wrap">
-			<input type="text" class="input-big" placeholder="Passwort">
-		</div>
-		<div class="input-wrap input-wrap_fb">
-			<button class="btn-submit">anmelden</button>
-			<span>oder</span>
-			<a class="btn-fb" href="#"><i></i><span>MIT FACEBOOK anmelden</span></a>
-		</div>
-		<div class="input-wrap">
-			<a href="#">Passwort oder Benutzername vergessen?</a>
-		</div>
-	</div>
-	<button class="popup__close"></button>
 </div>
 </body>
 </html> 

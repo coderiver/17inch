@@ -9,6 +9,7 @@
 	<script src="../js/jquery-2.0.2.min.js"></script>
 	<script src="../js/jquery.cycle2.min.js"></script>
 	<script src="../js/jquery.cycle2.carousel.min.js"></script>
+	<script src="../js/chosen.js"></script>
 	<script src="frontend/17inches/default/js/html5shiv.js"></script>
 	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
@@ -122,17 +123,14 @@
 
 			<div class="item-info__share" style="margin:-20px 0 30px; float:right; position:relative; z-index:100;">
 				<div class="share-wrap">
-  					<div class="select select_s">
-						<span class="select__text">Share</span>
-						<ul class="select__list">
-							<li><a href="#">Share</a></li>
-							<li><a href="#">Share</a></li>
-							<li><a href="#">Share</a></li>
-							<li><a href="#">Share</a></li>
-						</ul>
-					</div>
-  					<img src="frontend/17inches/default/img/share.png" alt="">
-  				</div>
+					<select class="chosen-select chosen-rtl js-chosen-select">
+						<option value="Bitte Farbe wählen">Bitte Farbe wählen</option>
+						<option value="var1">var1</option>
+						<option value="var2">var2</option>
+						<option value="var3">var3</option>
+					</select>
+					<img src="frontend/17inches/default/img/share.png" alt="">
+				</div>
 			</div>
 
 			<article class="article" style="font-size:12px; text-align:justify; clear:both;">

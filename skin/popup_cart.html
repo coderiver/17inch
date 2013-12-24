@@ -9,6 +9,7 @@
 	<script src="../js/jquery-2.0.2.min.js"></script>
 	<script src="../js/jquery.cycle2.min.js"></script>
 	<script src="../js/jquery.cycle2.carousel.min.js"></script>
+	<script src="../js/chosen.js"></script>
 	<script src="frontend/17inches/default/js/html5shiv.js"></script>
 	<script src="frontend/17inches/default/js/common.js"></script>
 </head>
@@ -409,26 +410,28 @@
 	</div>
 </footer>
 <!-- END .footer -->
-<div class="overlay"></div>
-<div class="popup popup_small popup-cart">
-	<div class="popup-cart__body">
-		<a href="#" class="popup-cart__img">
-			<img src="http://lorempixel.com/120/142/" alt="">
-		</a>
-		<div class="popup-cart__main">
-			<div class="popup-cart__title1">LOREM IPSUaM DOLOR SIT ARMED</div>
-			<div class="popup-cart__title2">LOREM IPSUM DOLOR SIT ARMED</div>
-			<div class="popup-cart__meta">NR 123454645775475754745745</div>
+<div class="overlay js-overlay" style="display:block"></div>
+<div class="popup-wrap" style="display:block">
+	<div class="popup popup_small popup-cart">
+		<div class="popup-cart__body">
+			<a href="#" class="popup-cart__img">
+				<img src="http://lorempixel.com/120/142/" alt="">
+			</a>
+			<div class="popup-cart__main">
+				<div class="popup-cart__title1">LOREM IPSUaM DOLOR SIT ARMED</div>
+				<div class="popup-cart__title2">LOREM IPSUM DOLOR SIT ARMED</div>
+				<div class="popup-cart__meta">NR 123454645775475754745745</div>
+			</div>
 		</div>
+		<div class="popup-cart__title1">Produkt Wurde erfolgreich hinzugefügt.</div>
+		<div class="popup-cart__action">
+			<a href="#" class="to-basket">
+				<span>Zum Warenkorb</span>
+			</a>
+			<a class="btn-submit" href="#">anmelden</a>
+		</div>
+		<button class="popup__close"></button>
 	</div>
-	<div class="popup-cart__title1">Produkt Wurde erfolgreich hinzugefügt.</div>
-	<div class="popup-cart__action">
-		<a href="#" class="to-basket">
-			<span>Zum Warenkorb</span>
-		</a>
-		<a class="btn-submit" href="#">anmelden</a>
-	</div>
-	<button class="popup__close"></button>
 </div>
 </body>
 </html> 

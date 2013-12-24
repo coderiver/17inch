@@ -302,7 +302,6 @@
 		border: 4px solid #dfe6d4
 		border-top-width: 7px
 		border-radius: 4px
-		overflow: hidden
 		box-shadow: 0 0 6px*$k rgba(0,0,0,.4)
 		.item__info
 			display: none
@@ -357,11 +356,11 @@
 	display: none
 	padding: 30px*$k 0 0 20px*$k
 	font-size: 0
-	.select_s,
+	.chosen-container,
 	.input-plus
 		display: inline-block
 		vertical-align: middle
-		width: 60px*$k
+		width: 60px*$k !important
 		margin-right: 4px
 	.input-plus
 		position: relative
@@ -403,9 +402,9 @@
 			width: auto
 			height: auto
 .share-wrap
-	.select_s
-		height: 20px*$k
-		width: 60px*$k
+	.chosen-container
+		//height: 20px*$k
+		width: 60px*$k !important
 		margin-right: 6px*$k
 		display: inline-block
 		vertical-align: middle
@@ -472,12 +471,12 @@
 	margin: 21px*$k 0 0 
 	font-size: 0
 	+clr
-	.select,
+	.chosen-container,  
 	.filter__search
 		display: inline-block
 		vertical-align: middle
 		margin-right: 6px*$k
-		width: 125px*$k
+		width: 125px*$k !important
 	&.is-fixed
 		position: fixed
 		left: 50%
