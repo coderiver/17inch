@@ -8,21 +8,27 @@ $j(document).ready(function(){
 
 	function slider() {
 		var slider = $j('.js-slider');
-		if (slider.length > 0) {
 			slider.each(function(){
 				el_next = $j(this).find('.slider__nav_next');
 				el_prev = $j(this).find('.slider__nav_prev');
 				el_item = $j(this).find('.slider__item');
 				el_in = $j(this).find('.slider');
-				el_in.cycle({
-					fx: 'carousel',
-					timeout: 0,
-					prev: el_prev,
-					next: el_next,
-					slides: el_item
-				});
-			})
-		};		  	
+				if ($j(this).find(".slider__item").length > 4) {
+					el_in.cycle({
+						fx: 'carousel',
+						timeout: 0,
+						speed: 100,
+						prev: el_prev,
+						next: el_next,
+						slides: el_item
+					});
+				}
+				else {
+					$j(this).addClass("is-inactive");
+					el_next.hide();
+					el_prev.hide();	
+				}
+			});	  	
 	}
 	slider();
 
