@@ -117,5 +117,30 @@ $j(document).ready(function(){
         inherit_select_classes: true
       });
 
+      function tab() {
+        $j(".js-tab").each(function(){
+            var tab_link = $j(this).find("a");
+            var tab_cont = $j(this).parents(".js-tab-group").find(".js-tab-cont");
+            tab_cont.hide();
+            $j(this).parents(".js-tab-group").find(".js-tab1").show();
+            tab_link.bind("click", function() {
+              if ($j(this).hasClass("is-active")) {
+                return false;
+              }
+              else {
+                var index = $j(this).attr("href");
+                  tab_link.removeClass("is-active");
+                  tab_link.parent().removeClass("is-active");
+                  $j(this).addClass("is-active");
+                  $j(this).parent().addClass("is-active");
+                  tab_cont.hide();
+                  $j(this).parents(".js-tab-group").find("."+index).toggle();
+              }
+                return false;
+            });
+        });
+    }
+    tab();
+
 });		
 
